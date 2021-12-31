@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  background-color: #0043c1;
+}
+
+.socialMediaContainer {
+  display: flex;
+  height: 32px;
+}
+
+.socialMediaIcon {
+  margin: 0 20px;
+  font-size: 32px;
+  color: rgba(245, 249, 255, 0.85);
+  text-align: center;
+  transition: ease-in-out 200ms all;
+}
+
+.socialMediaIcon:hover {
+  color: white;
+}

@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.navbarLinks {
+  display: flex;
+  flex-grow: 1;
+  justify-content: right;
+}
+
+.navbarLink {
+  margin: 0 31px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(245, 249, 255, 0.85);
+  text-align: center;
+  transition: ease-in-out 200ms all;
+}
+
+.navbarLink:hover {
+  font-weight: 700;
+  color: white;
+}
+
+.navbarImageContainer {
+  height: 42px;
+  aspect-ratio: 1;
+}

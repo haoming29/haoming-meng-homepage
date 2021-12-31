@@ -1,0 +1,35 @@
+.heading {
+  height: 540px;
+  background: linear-gradient(180deg, #0043c1 0%, #4663cc 100%);
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+.headingContainer {
+  margin-top: 95px;
+}
+
+.headingName {
+  color: #f5f9ff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.headingPosition {
+  margin-top: 6px;
+  color: rgba(245, 249, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.headingMainHeadline {
+  margin-top: 10px;
+  color: #f5f9ff;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.headingMainHeadlineHey {
+  margin-top: 6px;
+}
