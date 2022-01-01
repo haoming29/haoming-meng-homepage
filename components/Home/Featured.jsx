@@ -3,8 +3,19 @@ import React from "react";
 import styles from "./Featured.module.css";
 import featuredImg1 from "../../public/images/featured-image-1.png";
 import featuredImg2 from "../../public/images/featured-image-2.png";
+import TechStackIcon from "../common/TechStackIcon";
 
 const Featured = () => {
+  const techStack = [
+    "django",
+    "vue",
+    "python",
+    "pandas",
+    "numpy",
+    "axios",
+    "docker",
+    "github actions",
+  ];
   return (
     <section className={styles.featured}>
       <div className={`container ${styles.featuredContainer}`}>
@@ -20,7 +31,11 @@ const Featured = () => {
             tracking capabilities to prospective high school students and their
             parents, including data of over 6000 universities in the U.S.
           </div>
-          <div className={`${styles.techStack}`}></div>
+          <div className={`${styles.techStack}`}>
+            {techStack.map((item, index) => (
+              <TechStackIcon key={index} icon={item} />
+            ))}
+          </div>
         </div>
         <div className={`${styles.imageContainer}`}>
           <div className={`${styles.image} ${styles.image1}`}>

@@ -1,0 +1,21 @@
+.icon {
+  width: 32px;
+  height: 32px;
+  color: #004ab9;
+  margin-right: 10px;
+}
+
+.iconText {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 16px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(245, 249, 255, 0.85);
+  background-color: #004ab9;
+}

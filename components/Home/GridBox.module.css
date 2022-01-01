@@ -1,0 +1,41 @@
+.gridbox {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 15px 10px 15px;
+  height: 525px;
+  width: 720px;
+}
+
+.gridbox:nth-child(2n) {
+  width: 540px;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 445px;
+  background-color: gainsboro;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.texts {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #00379e;
+}
+
+.type {
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #00379e;
+}

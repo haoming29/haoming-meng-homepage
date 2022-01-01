@@ -11,8 +11,14 @@
   height: 32px;
 }
 
-.socialMediaIcon {
+.socialMediaIconWrapper {
+  display: block;
   margin: 0 20px;
+  height: 32px;
+  width: 32px;
+}
+
+.socialMediaIcon {
   font-size: 32px;
   color: rgba(245, 249, 255, 0.85);
   text-align: center;

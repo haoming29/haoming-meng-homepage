@@ -43,9 +43,11 @@
 }
 
 .techStack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   height: 32px;
   margin-top: 58px;
-  background-color: silver;
 }
 
 .imageContainer {

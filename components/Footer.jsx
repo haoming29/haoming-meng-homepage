@@ -9,11 +9,18 @@ const Footer = () => {
       <div className={styles.socialMediaContainer}>
         {socialMedia.map((item) => {
           return (
-            <FontAwesomeIcon
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
               key={item.name}
-              className={`${styles.socialMediaIcon} link`}
-              icon={["fab", item.icon]}
-            />
+              className={`${styles.socialMediaIconWrapper} link`}
+            >
+              <FontAwesomeIcon
+                className={`${styles.socialMediaIcon}`}
+                icon={["fab", item.icon]}
+              />
+            </a>
           );
         })}
       </div>

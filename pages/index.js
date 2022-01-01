@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Footer from "../components/Footer";
 import Featured from "../components/Home/Featured";
+import Grid from "../components/Home/Grid";
 import Heading from "../components/Home/Heading";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Home.module.css";
@@ -25,6 +26,7 @@ export default function Home() {
       <main>
         <Heading />
         <Featured />
+        <Grid />
       </main>
       <Footer />
     </div>
