@@ -6,7 +6,7 @@ const GridBox = ({ src, link, size, name, type }) => {
   return (
     <div className={`${styles.gridbox}`}>
       <div className={styles.imageContainer}>
-        <Image className={styles.image} src={src} alt=" " layout="fill" />
+        {/* <Image className={styles.image} src={src} alt=" " layout="fill" /> */}
       </div>
       <div className={styles.texts}>
         <div className={styles.name}>{name}</div>

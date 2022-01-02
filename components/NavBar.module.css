@@ -4,13 +4,17 @@
   align-items: center;
 }
 
+.navbarDark {
+  background: linear-gradient(180deg, #0043c1 0%, #4663cc 100%);
+}
+
 .navbarLinks {
   display: flex;
   flex-grow: 1;
   justify-content: right;
 }
 
-.navbarLink {
+a.navbarLink {
   margin: 0 31px;
   font-size: 14px;
   font-weight: 400;
@@ -20,6 +24,11 @@
 }
 
 .navbarLink:hover {
+  font-weight: 700;
+  color: white;
+}
+
+.navbarCurrent {
   font-weight: 700;
   color: white;
 }
