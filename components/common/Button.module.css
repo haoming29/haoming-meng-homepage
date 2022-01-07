@@ -1,0 +1,18 @@
+.customButton {
+  width: 130px;
+  height: 45px;
+  border: none;
+  background: #0043c1;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  transition: ease-in-out 100ms background;
+}
+
+.customButton:hover {
+  color: #f5f9ff;
+  background: #00379e;
+  cursor: pointer;
+}

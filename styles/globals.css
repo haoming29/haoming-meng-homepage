@@ -24,3 +24,29 @@ a {
 .link:hover {
   cursor: pointer;
 }
+
+.page-subheading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #00379e;
+}
+
+.page-heading {
+  margin-top: 6px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #00379e;
+}
+
+.page-description {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00379e;
+}
