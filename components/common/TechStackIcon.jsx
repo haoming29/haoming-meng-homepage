@@ -17,15 +17,20 @@ const TechStackIcon = ({ icon }) => {
 
   if (Object.keys(iconMapping).includes(icon)) {
     return (
-      <FontAwesomeIcon
-        key={icon}
-        className={`${styles.icon}`}
-        icon={["fab", iconMapping[icon]]}
-      />
+      <div key={icon} className={styles.iconText}>
+        <FontAwesomeIcon
+          className={`${styles.icon}`}
+          icon={["fab", iconMapping[icon]]}
+        />
+        {icon}
+      </div>
     );
   } else {
-    // return <div className={`${styles.iconText}`}>{icon}</div>;
-    return <div className={`${styles.iconText}`}>{icon.slice(0, 1)}</div>;
+    return (
+      <div key={icon} className={`${styles.iconText}`}>
+        {icon}
+      </div>
+    );
   }
 };
 

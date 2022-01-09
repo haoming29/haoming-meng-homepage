@@ -1,0 +1,25 @@
+.introSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-right: 40px;
+}
+
+.introSectionTexts {
+  margin-top: 90px;
+  width: 540px;
+}
+
+.introSectionHeadingImageContainer {
+  margin-top: 30px;
+}
+
+.introSectionHeadingImage {
+  width: 304px;
+  height: 392px;
+}
+
+.buttonContainer {
+  margin-top: 40px;
+}

@@ -1,20 +1,20 @@
 .icon {
-  width: 32px;
-  height: 32px;
-  color: #004ab9;
-  margin-right: 10px;
+  width: 14px;
+  height: 12px;
+  color: rgba(245, 249, 255, 0.85);
+  margin-right: 4px;
 }
 
 .iconText {
-  width: 32px;
-  height: 32px;
-  margin-right: 10px;
-  border-radius: 16px;
-  font-size: 26px;
-  line-height: 30px;
-  font-weight: 500;
+  min-width: 70px;
+  height: 22px;
+  margin: 0 10px 10px 0;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
   text-transform: capitalize;
-  text-align: center;
   vertical-align: middle;
   color: rgba(245, 249, 255, 0.85);
   background-color: #004ab9;

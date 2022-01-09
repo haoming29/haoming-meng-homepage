@@ -1,0 +1,73 @@
+.projectSection {
+  display: flex;
+  margin: 70px 0;
+  padding: 10px 0;
+}
+
+.texts {
+  flex: 1 0;
+  margin-right: 50px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.headingThumbnail {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.headingTexts {
+}
+.name {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #00379e;
+}
+
+.type {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4971bb;
+}
+
+.date {
+  font-size: 16px;
+  line-height: 19px;
+  color: #4971bb;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #00379e;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 32px;
+  margin-top: 30px;
+}
+
+.image {
+  width: 450px;
+  height: 250px;
+  background: cornflowerblue;
+  transition: ease-in-out 100ms box-shadow;
+}
+
+.image:hover {
+  box-shadow: 0px 0px 20px rgba(0, 55, 158, 0.6);
+}
