@@ -15,6 +15,7 @@ import {
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faPlayCircle } from "@fortawesome/free-regular-svg-icons";
 
 library.add(
   faGithub,
@@ -30,7 +31,8 @@ library.add(
   faVuejs,
   faDocker,
   faFigma,
-  faGitAlt
+  faGitAlt,
+  faPlayCircle
 );
 
 function MyApp({ Component, pageProps }) {

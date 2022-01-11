@@ -1,0 +1,118 @@
+.projectSection {
+  min-width: 490px;
+  margin: 20px 0 50px 0;
+  color: white;
+}
+
+.topProject {
+  margin: 20px 0;
+}
+
+.player {
+  position: relative;
+  min-height: 285px;
+  aspect-ratio: 1.777;
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.6));
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.6);
+  transition: ease-in 400ms background;
+}
+
+.texts:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.type {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.name {
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.icon {
+  margin-top: 14px;
+  width: 36px;
+  height: 36px;
+  font-size: 36px;
+}
+
+.topType {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.topName {
+  margin-top: 6px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.topIcon {
+  margin-top: 25px;
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: grey;
+}
+
+.imageContainerWI {
+  background-color: transparent;
+}
+
+.image {
+  height: 100%;
+}
+
+.descriptions {
+  margin-top: 25px;
+  color: rgba(245, 249, 255, 0.85);
+}
+
+.dateRoles {
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.date {
+  margin-right: 20px;
+}
+
+.roles {
+  display: flex;
+}
+
+.role {
+  margin-right: 10px;
+}
+
+.description {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}

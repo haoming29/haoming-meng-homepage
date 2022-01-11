@@ -8,6 +8,7 @@ const IntroSection = ({
   subheading,
   buttonText,
   buttonURL,
+  dark,
   imageSrc,
   imageAlt,
   imageHeight,
@@ -17,9 +18,13 @@ const IntroSection = ({
   return (
     <section className={`${styles.introSection}`}>
       <div className={styles.introSectionTexts}>
-        <text className={"page-subheading"}>{subheading}</text>
-        <div className="page-heading">{heading}</div>
-        <div className="page-description">{children}</div>
+        <text className={`page-subheading ${dark && "page-dark"}`}>
+          {subheading}
+        </text>
+        <div className={`page-heading ${dark && "page-dark"}`}>{heading}</div>
+        <div className={`page-description ${dark && "page-dark"}`}>
+          {children}
+        </div>
         {buttonText && (
           <div className={styles.buttonContainer}>
             <Button>{buttonText}</Button>
@@ -34,6 +39,7 @@ const IntroSection = ({
             alt={imageAlt}
             width={imageWidth}
             height={imageHeight}
+            objectFit={"cover"}
           />
         </div>
       )}
