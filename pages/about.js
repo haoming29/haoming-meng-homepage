@@ -1,47 +1,22 @@
 import React from "react";
+import Head from "next/head";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MajorLayout from "../components/layouts/MajorLayout";
 import styles from "./about.module.css";
 import sectionImage from "../public/images/business-3d-318.png";
 import Image from "next/image";
 import Button from "../components/common/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import EFlogo from "../public/images/EF_Education_First_logo.jpeg";
-import YBlogo from "../public/images/yiban-logo.jpeg";
+import { title } from "../utils";
+
+import { aboutIntro, experience, funFacts, skills } from "../config/cms";
 
 const about = () => {
-  const skills = [
-    "Python",
-    "Java",
-    "Javascript",
-    "Typescript",
-    "Django",
-    "Node.js",
-    "React",
-    "Vue",
-    "Flask",
-    "Webpack",
-    "Babel",
-    "Pandas",
-    "Numpy",
-    "MySQL",
-    "Git",
-    "Docker",
-    "CI/CD",
-    "Scrum",
-  ];
-
-  const funFacts = [
-    "I’m 6’ 3’’ tall.",
-    "I was a director of a theater play during pandemic.",
-    "I don’t play basketball. lol",
-  ];
-
-  const socialMedia = [
+  const socialMedias = [
     {
       name: "LinkedIn",
       icon: (
         <FontAwesomeIcon
-          className={`${styles.socialmediaIcon}`}
+          className={styles.socialmediaIcon}
           icon={["fab", "linkedin"]}
         />
       ),
@@ -51,7 +26,7 @@ const about = () => {
       name: "YouTube",
       icon: (
         <FontAwesomeIcon
-          className={`${styles.socialmediaIcon}`}
+          className={styles.socialmediaIcon}
           icon={["fab", "youtube"]}
         />
       ),
@@ -60,7 +35,7 @@ const about = () => {
       name: "GitHub",
       icon: (
         <FontAwesomeIcon
-          className={`${styles.socialmediaIcon}`}
+          className={styles.socialmediaIcon}
           icon={["fab", "github"]}
         />
       ),
@@ -69,18 +44,15 @@ const about = () => {
   ];
   return (
     <MajorLayout>
+      <Head>
+        <title>{`${title("About")}`}</title>
+      </Head>
       <div className="container">
         <section className={`${styles.introSection}`}>
           <div className={styles.introSectionTexts}>
             <text className={"page-subheading"}>Hey There!</text>
-            <div className="page-heading">I’m Haoming Meng</div>
-            <div className="page-description">
-              I’m a junior student at University of Wisconsin - Madison,
-              studying Computer Science and Communication Arts, film track and
-              also a software developer with emphasize on frontend. I expect to
-              graduate in summer 2023 and am actively seeking for summer
-              internships.
-            </div>
+            <div className="page-heading">{`I’m Haoming Meng`}</div>
+            <div className="page-description">{aboutIntro}</div>
             <div className={styles.buttonContainer}>
               <Button>Resume</Button>
             </div>
@@ -97,68 +69,30 @@ const about = () => {
         </section>
         <section className={`${styles.section}`}>
           <div className={styles.sectionHeader}>Experience</div>
-          <div className={styles.experienceInstance}>
-            <div className={styles.experienceName}>
-              <div className={styles.expericenLogoContainer}>
-                <Image
-                  src={EFlogo}
-                  alt="Education First logo"
-                  className={styles.expericenLogo}
-                />
-              </div>
-              EF Education First
-            </div>
-            <div className={styles.expericenDetail}>
-              <div className={styles.experienceAttributes}>
-                <div className={styles.experienceTitle}>Frontend intern</div>
-                <div className={styles.experienceDate}>
-                  Jun. 2021 - Aug. 2021
+          {experience.map((item) => (
+            <div key={item.name} className={styles.experienceInstance}>
+              <div className={styles.experienceName}>
+                <div className={styles.expericenLogoContainer}>
+                  <Image
+                    src={item.companyLogo}
+                    alt={item.companyLogoAlt}
+                    className={styles.expericenLogo}
+                  />
                 </div>
-                <div className={styles.experiecnePlace}>Shanghai, China</div>
+                {item.name}
               </div>
-              <div className={styles.expericenDescription}>
-                Refactored the company’s virtual classroom operation website
-                using Typescript, React, and Node.js <br />
-                Implemented Azure Active Directory to the project, providing SSO
-                ability via OAuth protocol <br />
-                Built Docker image and deploy project on Kubernetes with Helm
-                chart and automated Jenkins workflow <br />
-                Practiced uniformed coding style with code review and by
-                development tools such as ESlint, husky, prettier
-              </div>
-            </div>
-          </div>
-          <div className={styles.experienceInstance}>
-            <div className={styles.experienceName}>
-              <div className={styles.expericenLogoContainer}>
-                <Image
-                  src={YBlogo}
-                  alt="Yiban logo"
-                  className={styles.expericenLogo}
-                />
-              </div>
-              Shanghai Yiban Enterprise Developement Co., Ltd.
-            </div>
-            <div className={styles.expericenDetail}>
-              <div className={styles.experienceAttributes}>
-                <div className={styles.experienceTitle}>Frontend intern</div>
-                <div className={styles.experienceDate}>
-                  Mar. 2021 - Jun. 2021
+              <div className={styles.expericenDetail}>
+                <div className={styles.experienceAttributes}>
+                  <div className={styles.experienceTitle}>{item.title}</div>
+                  <div className={styles.experienceDate}>{item.date}</div>
+                  <div className={styles.experiecnePlace}>{item.location}</div>
                 </div>
-                <div className={styles.experiecnePlace}>Shanghai, China</div>
-              </div>
-              <div className={styles.expericenDescription}>
-                Involved the front-end development for national-wide educational
-                management service with 100,000 DAU
-                <br />
-                Collected, reported, and fixed bugs of the company's Vue.js web
-                apps
-                <br />
-                Tested the UI components of company’s UI framework using Jest
-                and Vue Test Utils
+                <div className={styles.expericenDescription}>
+                  {item.description}
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </section>
         <section className={`${styles.section}`}>
           <div className={styles.sectionHeader}>Technical Skills</div>
@@ -192,7 +126,7 @@ const about = () => {
         <section className={`${styles.section}`}>
           <div className={styles.sectionHeader}>Social Media</div>
           <div className={styles.socialmediaContainer}>
-            {socialMedia.map((item) => (
+            {socialMedias.map((item) => (
               <a
                 href={item.link}
                 target="_blank"

@@ -1,3 +1,6 @@
+export const baseTitle = "MINGX";
+export const baseDescription =
+  "Hi There! Welcome to the homepage of Haoming Meng. Come and hang out here.";
 export const navbar = [
   {
     name: "About",
