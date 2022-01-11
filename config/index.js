@@ -34,6 +34,6 @@ export const socialMedia = [
   {
     name: "YouTube",
     icon: "youtube",
-    link: "",
+    link: "https://www.youtube.com/channel/UC1jz7jNrbqshQPBxX8_ZC_Q",
   },
 ];

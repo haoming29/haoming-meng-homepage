@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from "react-player/youtube";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./FilmProject.module.css";
@@ -9,37 +10,40 @@ const FilmProject = ({
   type,
   coverSrc,
   coverAlt,
+  youtubeURL,
   date,
   roles,
   description,
 }) => {
+  const handleTextClick = () => {};
+  const playIcon = (
+    <div className={styles.texts}>
+      <div className={`${styles.type} ${top && styles.topType}`}>{type}</div>
+      <div className={`${styles.name} ${top && styles.topName}`}>{name}</div>
+      <FontAwesomeIcon
+        className={`${styles.icon} ${top && styles.topIcon}`}
+        icon={["far", "play-circle"]}
+      />
+    </div>
+  );
   return (
     <div className={`${styles.projectSection} ${top && styles.topProject}`}>
       <div className={styles.player}>
-        <div className={styles.texts}>
-          <div className={`${styles.type} ${top && styles.topType}`}>
-            {type}
-          </div>
-          <div className={`${styles.name} ${top && styles.topName}`}>
-            {name}
-          </div>
-          <FontAwesomeIcon
-            className={`${styles.icon} ${top && styles.topIcon}`}
-            icon={["far", "play-circle"]}
-          />
-        </div>
-        <div
-          className={`${styles.imageContainer} ${
-            coverSrc && styles.imageContainerWI
-          }`}
-        >
-          {coverSrc && (
-            <Image
-              className={styles.image}
-              src={coverSrc}
-              alt={coverAlt}
-              objectFit="contain"
-            ></Image>
+        <div className={`${styles.imageContainer}`}>
+          {youtubeURL && (
+            <ReactPlayer
+              url={youtubeURL}
+              height={"100%"}
+              width={"100%"}
+              light={true}
+              playIcon={playIcon}
+              controls={true}
+              config={{
+                youtube: {
+                  playerVars: { modestbranding: 1, rel: 0 },
+                },
+              }}
+            />
           )}
         </div>
       </div>
@@ -54,7 +58,11 @@ const FilmProject = ({
             ))}
           </div>
         </div>
-        {top && <div className={styles.description}>{description}</div>}
+        <div
+          className={`${styles.description} ${top && styles.topDescription}`}
+        >
+          {description}
+        </div>
       </div>
     </div>
   );

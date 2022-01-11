@@ -30,6 +30,7 @@ const about = () => {
           icon={["fab", "youtube"]}
         />
       ),
+      link: "https://www.youtube.com/channel/UC1jz7jNrbqshQPBxX8_ZC_Q",
     },
     {
       name: "GitHub",

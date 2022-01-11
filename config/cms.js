@@ -87,11 +87,13 @@ they are inspiring.`;
 export const codingProjects = [
   {
     name: "College List",
+    id: "college-list",
+    link: "",
     type: "Web App",
     date: "Mar. 2021 - Oct. 2021",
-    thumbnailSrc: collegelistLogo,
-    imageSrc: collegelistThumbnail,
-    imageAlt: "College List",
+    logoSrc: collegelistLogo,
+    thumbnailSrc: collegelistThumbnail,
+    thumbnailAlt: "College List",
     description:
       "Provide university search, filter, college list making, application tracking capabilities to prospective high school students and their parents, including data of over 6000 universities in the U.S.",
     techStack: [
@@ -104,14 +106,30 @@ export const codingProjects = [
       "docker",
       "github actions",
     ],
+    features: [
+      {
+        name: "",
+        intro: "",
+        image: "",
+      },
+    ],
+    systemArchitecture: [
+      {
+        image: "",
+        description: "",
+        alt: "",
+      },
+    ],
   },
   {
     name: "Activity Go",
+    id: "activity-go",
+    link: "",
     type: "Web App",
     date: "Sep.2021 – Dec. 2021",
-    thumbnailSrc: activityGoLogo,
-    imageSrc: activityGoThumbnail,
-    imageAlt: "Activity Go",
+    logoSrc: activityGoLogo,
+    thumbnailSrc: activityGoThumbnail,
+    thumbnailAlt: "Activity Go",
     description:
       "Activity Go helps users achieve their fitness goals by recommending activities based on their personal interests and health conditions and awarding them gift cards for completing activities.",
     techStack: [
@@ -127,11 +145,13 @@ export const codingProjects = [
   },
   {
     name: "Theatre Booking Website",
+    id: "theatre-booking-website",
+    link: "",
     type: "Web App",
     date: "Sep.2019 – Mar. 2021",
-    thumbnailSrc: sayingLogo,
-    imageSrc: sayingThumbnail,
-    imageAlt: "Theatre Booking Website",
+    logoSrc: sayingLogo,
+    thumbnailSrc: sayingThumbnail,
+    thumbnailAlt: "Theatre Booking Website",
     description:
       "A ticket booking website for a theatre club with over 500 patrons per show.",
     techStack: ["node", "express", "bootstrap", "mongodb", "linux", "nginx"],
@@ -153,57 +173,47 @@ export const featuredFilm = {
   roles: ["Director", "Postproduction"],
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
+  youtubeURL: "https://www.youtube.com/watch?v=JSwKosGOIFc",
 };
 
 export const filmProjects = [
   {
-    name: "Rhinoceros In Love",
-    type: "Online Drama",
-    coverSrc: RhinocerosInLove,
-    coverAlt: "Rhinoceros In Love",
-    date: "May 2021",
-    roles: ["Director", "Postproduction"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
-  },
-  {
-    name: "Rhinoceros In Love",
-    type: "Online Drama",
+    name: "She Was Smiling #MentalHealth PSA",
+    type: "Short Film",
     coverSrc: "",
     coverAlt: "",
-    date: "May 2021",
-    roles: ["Director", "Postproduction"],
+    date: "Oct 2020",
+    roles: [
+      "Director",
+      "Script",
+      "Producer",
+      "Cinematographer",
+      "Postproduction",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
+    youtubeURL: "https://www.youtube.com/watch?v=wIkZf37JIXM",
   },
+  // {
+  //   name: "Final Prize",
+  //   type: "Short Film",
+  //   coverSrc: "",
+  //   coverAlt: "",
+  //   date: "Dec 2020",
+  //   roles: ["Director", "Producer", "Cinematographer", "Postproduction"],
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
+  //   youtubeURL: "",
+  // },
   {
-    name: "Rhinoceros In Love",
-    type: "Online Drama",
+    name: "Memory Blocked",
+    type: "Short Film",
     coverSrc: "",
     coverAlt: "",
-    date: "May 2021",
-    roles: ["Director", "Postproduction"],
+    date: "June 2019",
+    roles: ["Director", "Producer", "Cinematographer", "Postproduction"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
-  },
-  {
-    name: "Rhinoceros In Love",
-    type: "Online Drama",
-    coverSrc: "",
-    coverAlt: "",
-    date: "May 2021",
-    roles: ["Director", "Postproduction"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
-  },
-  {
-    name: "Rhinoceros In Love",
-    type: "Online Drama",
-    coverSrc: "",
-    coverAlt: "",
-    date: "May 2021",
-    roles: ["Director", "Postproduction"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
+    youtubeURL: "https://youtu.be/m_8cNjdE30o",
   },
 ];

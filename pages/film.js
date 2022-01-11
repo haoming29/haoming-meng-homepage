@@ -6,7 +6,7 @@ import MajorLayout from "../components/layouts/MajorLayout";
 import HeadingImage from "../public/images/3d-flame-camera-polaroid-3.png";
 import { title } from "../utils";
 import styles from "./film.module.css";
-import { featuredFilm, filmIntroduction, filmProjects } from "../config/cms";
+import { featuredFilm, filmIntro, filmProjects } from "../config/cms";
 
 const Coding = () => {
   return (
@@ -29,7 +29,7 @@ const Coding = () => {
           imageWidth={423}
           imageAlt={"a man sits and holds a laptop"}
         >
-          {filmIntroduction}
+          {filmIntro}
         </IntroSection>
         <div className={styles.featuredFilm}>
           <FilmProject
@@ -42,6 +42,7 @@ const Coding = () => {
             date={featuredFilm.date}
             roles={featuredFilm.roles}
             description={featuredFilm.description}
+            youtubeURL={featuredFilm.youtubeURL}
           />
         </div>
         <div className={styles.filmProjects}>
@@ -55,6 +56,7 @@ const Coding = () => {
               date={item.date}
               roles={item.roles}
               description={item.description}
+              youtubeURL={item.youtubeURL}
             />
           ))}
         </div>

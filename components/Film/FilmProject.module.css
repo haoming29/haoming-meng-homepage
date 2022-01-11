@@ -21,6 +21,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.45);
   background: rgba(0, 0, 0, 0.6);
   transition: ease-in 400ms background;
@@ -74,12 +75,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -1;
-  background-color: grey;
-}
-
-.imageContainerWI {
-  background-color: transparent;
+  background-color: gray;
+  /* z-index: -1; */
 }
 
 .image {
@@ -93,12 +90,14 @@
 
 .dateRoles {
   display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   line-height: 19px;
 }
 
 .date {
   margin-right: 20px;
+  margin-bottom: 6px;
 }
 
 .roles {
@@ -110,6 +109,14 @@
 }
 
 .description {
+  margin-top: 16px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.topDescription {
   margin-top: 10px;
   padding-bottom: 20px;
   font-weight: 300;

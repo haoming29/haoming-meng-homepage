@@ -4,6 +4,10 @@
   padding: 10px 0;
 }
 
+.projectSection:hover {
+  cursor: pointer;
+}
+
 .texts {
   flex: 1 0;
   margin-right: 50px;
@@ -15,7 +19,7 @@
   margin-bottom: 25px;
 }
 
-.headingThumbnail {
+.headingLogo {
   width: 35px;
   height: 35px;
   margin-right: 10px;
@@ -24,8 +28,6 @@
   overflow: hidden;
 }
 
-.headingTexts {
-}
 .name {
   margin-bottom: 4px;
   font-weight: bold;
