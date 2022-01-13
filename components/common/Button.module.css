@@ -16,3 +16,9 @@
   background: #00379e;
   cursor: pointer;
 }
+
+.icon {
+  height: 12px;
+  margin-right: 6px;
+  margin-left: -4px;
+}

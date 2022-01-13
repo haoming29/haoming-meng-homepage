@@ -1,0 +1,56 @@
+.featuresSection {
+  margin: 100px 0;
+}
+.featureHeading {
+  margin-bottom: 60px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #00379e;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featureList {
+  color: rgba(0, 55, 158, 0.2);
+  margin: 30px 50px 0 0;
+}
+
+.featureName {
+  margin-bottom: 26px;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 82px;
+  text-transform: uppercase;
+  color: rgba(0, 55, 158, 0.2);
+  transition: ease-in 200ms color;
+}
+
+.featureName:hover {
+  cursor: pointer;
+}
+
+.featureNameCurrent {
+  color: #00379e;
+}
+
+.featureContainer {
+  width: 540px;
+  transition: opacity 0.5s ease;
+}
+
+.imageContainer {
+  height: 357px;
+  margin-bottom: 20px;
+  background-color: gray;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #00379e;
+}

@@ -1,0 +1,120 @@
+.projectOverview {
+  display: flex;
+  margin: 0 0 100px 0;
+}
+
+.texts {
+  flex: 1 0;
+  margin: 120px 50px 0 0;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 40px;
+}
+
+.headingLogoName {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.headingLogo {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 21px;
+  overflow: hidden;
+}
+
+.name {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #00379e;
+}
+
+.info {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4971bb;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #00379e;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.button {
+  margin-top: 40px;
+}
+
+.detailImages {
+  position: relative;
+  width: 540px;
+  height: 600px;
+  padding: 28px;
+  margin-right: -10px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.detailImageContainer {
+  position: absolute;
+  width: 300px;
+  filter: drop-shadow(0px 4px 16px rgba(0, 55, 158, 0.25));
+}
+
+.detailImageContainer:nth-child(2) {
+  margin-left: 170px;
+  margin-top: 90px;
+}
+
+.thumbNailImage {
+  width: 450px;
+  height: 250px;
+  align-self: center;
+  background: cornflowerblue;
+  transition: ease-in-out 100ms box-shadow;
+}
+
+.thumbNailImage:hover {
+  box-shadow: 0px 0px 20px rgba(0, 55, 158, 0.6);
+}
+
+.systemArchitecture {
+  margin: 100px 0;
+}
+
+.sectionHeading {
+  margin-bottom: 60px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #00379e;
+}
+
+.systemArchitectureImage {
+  width: 100%;
+  height: 490px;
+}
+
+.systemArchitectureImageDescription {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 55, 158, 0.7);
+}

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styles from "./TechStackIcon.module.css";
 
-const TechStackIcon = ({ icon }) => {
+const TechStackIcon = ({ icon, light }) => {
   const iconMapping = {
     git: "git-alt",
     figma: "figma",
@@ -17,9 +17,12 @@ const TechStackIcon = ({ icon }) => {
 
   if (Object.keys(iconMapping).includes(icon)) {
     return (
-      <div key={icon} className={styles.iconText}>
+      <div
+        key={icon}
+        className={`${styles.iconText} ${light && styles.iconTextLight}`}
+      >
         <FontAwesomeIcon
-          className={`${styles.icon}`}
+          className={`${styles.icon} ${light && styles.iconLight}`}
           icon={["fab", iconMapping[icon]]}
         />
         {icon}
@@ -27,7 +30,10 @@ const TechStackIcon = ({ icon }) => {
     );
   } else {
     return (
-      <div key={icon} className={`${styles.iconText}`}>
+      <div
+        key={icon}
+        className={`${styles.iconText}  ${light && styles.iconTextLight}`}
+      >
         {icon}
       </div>
     );

@@ -14,7 +14,11 @@ import {
   faFigma,
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCheckSquare,
+  faCoffee,
+  faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { faPlayCircle } from "@fortawesome/free-regular-svg-icons";
 
 library.add(
@@ -32,7 +36,8 @@ library.add(
   faDocker,
   faFigma,
   faGitAlt,
-  faPlayCircle
+  faPlayCircle,
+  faExternalLinkAlt
 );
 
 function MyApp({ Component, pageProps }) {

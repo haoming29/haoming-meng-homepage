@@ -9,8 +9,10 @@ import activityGoLogo from "../public/images/logo-dark.png";
 import activityGoThumbnail from "../public/images/activitygo-thumbnail.png";
 import sayingLogo from "../public/images/sayingLogo.jpeg";
 import sayingThumbnail from "../public/images/theatrebooking-thumbnail.png";
-
 import RhinocerosInLove from "../public/images/RhinocerosInLove.png";
+
+import collegelistdetail1 from "../public/images/featured-image-1.png";
+import collegelistdetail2 from "../public/images/featured-image-2.png";
 
 export const aboutIntro = `I’m a junior student at University of Wisconsin - Madison,
 studying Computer Science and Communication Arts, film track and
@@ -88,9 +90,10 @@ export const codingProjects = [
   {
     name: "College List",
     id: "college-list",
-    link: "",
+    link: "https://collegelist.cc/",
     type: "Web App",
     date: "Mar. 2021 - Oct. 2021",
+    role: "Personal Project",
     logoSrc: collegelistLogo,
     thumbnailSrc: collegelistThumbnail,
     thumbnailAlt: "College List",
@@ -106,25 +109,38 @@ export const codingProjects = [
       "docker",
       "github actions",
     ],
+    hasDetailImage: true,
+    detailImages: [collegelistdetail1, collegelistdetail2],
     features: [
       {
-        name: "",
-        intro: "",
+        name: "map",
+        intro:
+          "The map function let user easily find their prospective school by searching and browsing on a map.",
         image: "",
       },
-    ],
-    systemArchitecture: [
       {
+        name: "database",
+        intro:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue nam sed montes, dolor ipsum. Sed at vitae mi ornare. Sollicitudin volutpat ultrices sed libero. Ullamcorper massa venenatis ut ut tellus pellentesque at facilisis. Dolor, morbi ac gravida ultricies cursus ultricies eget facilisis. Tincidunt vehicula eu leo condimentum. Imperdiet elementum est, urna, vitae netus. Facilisis ac amet, euismod pellentesque eleifend viverra eget ullamcorper elit. Tincidunt in bibendum purus, ac vulputate arcu faucibus in. Urna semper facilisi vestibulum quam ac blandit. Fames diam netus maecenas diam sed tincidunt diam purus nulla. ",
         image: "",
-        description: "",
-        alt: "",
+      },
+      {
+        name: "college list",
+        intro:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue nam sed montes, dolor ipsum. Sed at vitae mi ornare. Sollicitudin volutpat ultrices sed libero. Ullamcorper massa venenatis ut ut tellus pellentesque at facilisis. Dolor, morbi ac gravida ultricies cursus ultricies eget facilisis. Tincidunt vehicula eu leo condimentum. Imperdiet elementum est, urna, vitae netus. Facilisis ac amet, euismod pellentesque eleifend viverra eget ullamcorper elit. Tincidunt in bibendum purus, ac vulputate arcu faucibus in. Urna semper facilisi vestibulum quam ac blandit. Fames diam netus maecenas diam sed tincidunt diam purus nulla. ",
+        image: "",
       },
     ],
+    systemArchitecture: {
+      image: "",
+      description: `Built front-end with Vue.js, using Element UI, Axios, and Vue i18n. \nProvided Restful API through Django, with Pandas and NumPy to generate customized college list. \nDeployed project with Docker and GitHub Actions to achieve continuous development and integration.`,
+      alt: "College List System Architecture",
+    },
   },
   {
     name: "Activity Go",
     id: "activity-go",
-    link: "",
+    link: "https://activitygo.mingx.tech/",
     type: "Web App",
     date: "Sep.2021 – Dec. 2021",
     logoSrc: activityGoLogo,
@@ -146,7 +162,7 @@ export const codingProjects = [
   {
     name: "Theatre Booking Website",
     id: "theatre-booking-website",
-    link: "",
+    link: "https://mingx.tech/",
     type: "Web App",
     date: "Sep.2019 – Mar. 2021",
     logoSrc: sayingLogo,

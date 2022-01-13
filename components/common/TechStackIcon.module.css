@@ -5,6 +5,10 @@
   margin-right: 4px;
 }
 
+.iconLight {
+  color: #004ab9;
+}
+
 .iconText {
   min-width: 70px;
   height: 22px;
@@ -18,4 +22,11 @@
   vertical-align: middle;
   color: rgba(245, 249, 255, 0.85);
   background-color: #004ab9;
+}
+
+.iconTextLight {
+  font-weight: 400;
+  color: #004ab9;
+  background-color: transparent;
+  border: solid 1px #004ab9;
 }
