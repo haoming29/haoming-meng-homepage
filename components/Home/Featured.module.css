@@ -1,3 +1,7 @@
+.featured:hover {
+  cursor: pointer;
+}
+
 .featuredContainer {
   display: flex;
   justify-content: space-around;

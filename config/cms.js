@@ -115,19 +115,25 @@ export const codingProjects = [
       {
         name: "map",
         intro:
-          "The map function let user easily find their prospective school by searching and browsing on a map.",
+          "Display all higher education institutions in the U.S. on an interactive map. User can zoom in and out to browse directly on the map, or use the simple search and filter function to find their prospective school to see its geographic location.",
         image: "",
       },
       {
         name: "database",
         intro:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue nam sed montes, dolor ipsum. Sed at vitae mi ornare. Sollicitudin volutpat ultrices sed libero. Ullamcorper massa venenatis ut ut tellus pellentesque at facilisis. Dolor, morbi ac gravida ultricies cursus ultricies eget facilisis. Tincidunt vehicula eu leo condimentum. Imperdiet elementum est, urna, vitae netus. Facilisis ac amet, euismod pellentesque eleifend viverra eget ullamcorper elit. Tincidunt in bibendum purus, ac vulputate arcu faucibus in. Urna semper facilisi vestibulum quam ac blandit. Fames diam netus maecenas diam sed tincidunt diam purus nulla. ",
+          "Gather, clean, and display over 6000 institutions detailed information, including but not limited to admission rate, student composition, standard test scores. Raw data is from official sources and are designed to be readable and easy-to-interpret by general users.",
+        image: "",
+      },
+      {
+        name: "search",
+        intro:
+          "User can search by institution name to find the school in our database, or the user can use the provided filters to eliminate their results.",
         image: "",
       },
       {
         name: "college list",
         intro:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue nam sed montes, dolor ipsum. Sed at vitae mi ornare. Sollicitudin volutpat ultrices sed libero. Ullamcorper massa venenatis ut ut tellus pellentesque at facilisis. Dolor, morbi ac gravida ultricies cursus ultricies eget facilisis. Tincidunt vehicula eu leo condimentum. Imperdiet elementum est, urna, vitae netus. Facilisis ac amet, euismod pellentesque eleifend viverra eget ullamcorper elit. Tincidunt in bibendum purus, ac vulputate arcu faucibus in. Urna semper facilisi vestibulum quam ac blandit. Fames diam netus maecenas diam sed tincidunt diam purus nulla. ",
+          "After browsing over the school information, users can add schools to their list and make a school list for themselves, with customized ranking, ordering, and tagging. Users can then add their comment and notes on each school and edit the list in their personal dashboard.",
         image: "",
       },
     ],
@@ -143,6 +149,7 @@ export const codingProjects = [
     link: "https://activitygo.mingx.tech/",
     type: "Web App",
     date: "Sep.2021 – Dec. 2021",
+    role: "Project Manager, Full-stack Developer",
     logoSrc: activityGoLogo,
     thumbnailSrc: activityGoThumbnail,
     thumbnailAlt: "Activity Go",
@@ -158,6 +165,39 @@ export const codingProjects = [
       "docker",
       "github actions",
     ],
+    hasDetailImage: true,
+    detailImages: [collegelistdetail1, collegelistdetail2],
+    features: [
+      {
+        name: "OAuth",
+        intro:
+          "Connect user to our service via Epic’s MyChart, where patient can easily authenticate and share their health information with us using a single click.",
+        image: "",
+      },
+      {
+        name: "Activities",
+        intro:
+          "Local activities are imported to our database and will recommend to user by their geographic location. In the later phase, recommendation will based on user’s favors and their health conditions via machine learning.",
+        image: "",
+      },
+      {
+        name: "Records",
+        intro:
+          "User can save the recommended activities for later reference. They may also start/finish the activities to update the status of their saved activities.",
+        image: "",
+      },
+      {
+        name: "Rewards",
+        intro:
+          "When finished each activities, rewards points are granted to the user, which can be redeemed for git cards as incentive to help user keep track of their goals.",
+        image: "",
+      },
+    ],
+    systemArchitecture: {
+      image: "",
+      description: `Built front-end with Vue.js, using Element UI, Axios, and Vue i18n. \nProvided Restful API through Django, with Pandas and NumPy to generate customized college list. \nDeployed project with Docker and GitHub Actions to achieve continuous development and integration.`,
+      alt: "Activity Go System Architecture",
+    },
   },
   {
     name: "Theatre Booking Website",
@@ -165,12 +205,39 @@ export const codingProjects = [
     link: "https://mingx.tech/",
     type: "Web App",
     date: "Sep.2019 – Mar. 2021",
+    role: "Personal Project",
     logoSrc: sayingLogo,
     thumbnailSrc: sayingThumbnail,
     thumbnailAlt: "Theatre Booking Website",
     description:
       "A ticket booking website for a theatre club with over 500 patrons per show.",
     techStack: ["node", "express", "bootstrap", "mongodb", "linux", "nginx"],
+    hasDetailImage: false,
+    features: [
+      {
+        name: "Seats",
+        intro:
+          "With jQuery Seat Charts, patrons can select seats by interacting with a seat map. Multiple rules are added to avoid unexpected user behavior such as maximum seats, ect.",
+        image: "",
+      },
+      {
+        name: "form",
+        intro:
+          "After the selection, patron is asked to fill out their personal information",
+        image: "",
+      },
+      {
+        name: "CrossCheck",
+        intro:
+          "When user select the seat, the seat will be locked so that other user have no access to it, and the seat will be freed and releases after 10minutes if the patron doesn’t proceed to the confirmation.",
+        image: "",
+      },
+    ],
+    systemArchitecture: {
+      image: "",
+      description: ``,
+      alt: "",
+    },
   },
 ];
 

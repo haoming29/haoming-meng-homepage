@@ -12,6 +12,7 @@ import Feature from "../../components/Coding/Feature";
 const CodingDetail = ({ project }) => {
   const detailImages =
     project &&
+    project.detailImages &&
     project.detailImages.map((item, index) => (
       <div key={index} className={styles.detailImageContainer}>
         <Image src={item} alt={"Detail Image"}></Image>
@@ -35,9 +36,8 @@ const CodingDetail = ({ project }) => {
                       <Image
                         src={project.logoSrc}
                         alt="Project logo"
-                        height={35}
-                        width={35}
-                        objectFit={"contain"}
+                        layout="fill"
+                        objectFit="contain"
                       ></Image>
                     )}
                   </div>

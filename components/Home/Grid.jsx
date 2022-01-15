@@ -2,23 +2,27 @@ import React from "react";
 import styles from "./Grid.module.css";
 import GridBox from "./GridBox";
 
+import activityGo from "../../public/images/activitygo-thumbnail.png";
+import saying from "../../public/images/theatrebooking-thumbnail.png";
+import rhinoceros from "../../public/images/RhinocerosInLove.png";
+
 const Grid = () => {
   const boxes = [
     {
-      src: "/",
-      link: "/",
+      src: activityGo,
+      link: "/coding/activity-go",
       name: "Activity Go",
       type: "Web App",
     },
     {
-      src: "/",
-      link: "/",
+      src: saying,
+      link: "/coding/theatre-booking-website",
       name: "Saying Theatre Booking Online",
       type: "Web App",
     },
     {
-      src: "/",
-      link: "/",
+      src: rhinoceros,
+      link: "/film",
       name: "Rhinoceros in Love",
       type: "Online Theatre",
     },
@@ -30,7 +34,6 @@ const Grid = () => {
           key={index}
           src={item.src}
           link={item.link}
-          size={item.size}
           name={item.name}
           type={item.type}
         />

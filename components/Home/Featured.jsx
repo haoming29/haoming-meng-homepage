@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { useRouter } from "next/router";
 import styles from "./Featured.module.css";
 import featuredImg1 from "../../public/images/featured-image-1.png";
 import featuredImg2 from "../../public/images/featured-image-2.png";
@@ -16,8 +17,12 @@ const Featured = () => {
     "docker",
     "github actions",
   ];
+  const router = useRouter();
   return (
-    <section className={styles.featured}>
+    <section
+      className={styles.featured}
+      onClick={() => router.push("/coding/college-list")}
+    >
       <div className={`container ${styles.featuredContainer}`}>
         <div className={`${styles.texts}`}>
           <div className={`${styles.decorationTitle}`}>Featured</div>
