@@ -33,7 +33,12 @@ a.navbarLink {
   color: white;
 }
 
+.navbarLink {
+  position: relative;
+}
+
 .navbarImageContainer {
+  position: relative;
   height: 42px;
   aspect-ratio: 1;
 }

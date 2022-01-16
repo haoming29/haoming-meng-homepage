@@ -34,11 +34,13 @@ const NavBar = ({ dark }) => {
       </Head>
       <div className={`${styles.navbar} container`}>
         <div className={styles.navbarImageContainer}>
-          <Link href={"/"} passHref={true}>
+          <Link href={"/"} passHref={true} className={styles.navbarLink}>
             <Image
               src={logo}
               alt="logo"
               className={`link ${styles.navbarImage}`}
+              objectFit="contain"
+              layout="fill"
             />
           </Link>
         </div>

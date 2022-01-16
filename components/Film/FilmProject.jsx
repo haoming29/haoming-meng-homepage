@@ -15,9 +15,8 @@ const FilmProject = ({
   roles,
   description,
 }) => {
-  const handleTextClick = () => {};
   const playIcon = (
-    <div className={styles.texts}>
+    <div className={`${styles.texts} ${top && styles.topTexts}`}>
       <div className={`${styles.type} ${top && styles.topType}`}>{type}</div>
       <div className={`${styles.name} ${top && styles.topName}`}>{name}</div>
       <FontAwesomeIcon
