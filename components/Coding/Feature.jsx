@@ -32,7 +32,8 @@ const Feature = ({ features }) => {
                 <Image
                   src={features[current].image}
                   alt={features[current].name}
-                  objectFit="contain"
+                  objectFit="cover"
+                  layout="fill"
                 />
               )}
             </div>

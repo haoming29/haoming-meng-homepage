@@ -84,11 +84,14 @@ const CodingDetail = ({ project }) => {
               <div className={styles.sectionHeading}>System Architecture</div>
               {project.systemArchitecture.image && (
                 <div className={styles.systemArchitectureImage}>
-                  <Image
-                    src={project.systemArchitecture.image}
-                    alt={project.systemArchitecture.alt}
-                    objectFit="contain"
-                  ></Image>
+                  <div className={styles.systemArchitectureImageContainer}>
+                    <Image
+                      src={project.systemArchitecture.image}
+                      alt={project.systemArchitecture.alt}
+                      objectFit="contain"
+                      layout="fill"
+                    ></Image>
+                  </div>
                   <div className={styles.systemArchitectureImageDescription}>
                     {project.systemArchitecture.description}
                   </div>

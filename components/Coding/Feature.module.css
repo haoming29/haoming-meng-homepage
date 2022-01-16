@@ -44,6 +44,7 @@
 }
 
 .imageContainer {
+  position: relative;
   height: 357px;
   margin-bottom: 20px;
   background-color: gray;

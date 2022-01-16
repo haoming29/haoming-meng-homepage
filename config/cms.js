@@ -14,6 +14,25 @@ import RhinocerosInLove from "../public/images/RhinocerosInLove.png";
 import collegelistdetail1 from "../public/images/featured-image-1.png";
 import collegelistdetail2 from "../public/images/featured-image-2.png";
 
+import clSearch from "../public/images/guide-search-filter.jpg";
+import clCL from "../public/images/guide-school-note.png";
+import clMap from "../public/images/guide-map.png";
+import clDB from "../public/images/guide-database.png";
+
+import activityDetail1 from "../public/images/activitygo-detail-1.png";
+import activityDetail2 from "../public/images/activitygo-detail-2.png";
+import activityOauth from "../public/images/activitygo-oauth.png";
+import activityActivity from "../public/images/activitygo-activity.png";
+import activityRecord from "../public/images/activitygo-record.png";
+import activityRewards from "../public/images/activitygo-rewards.png";
+import activityDesign from "../public/images/activitygo-SystemDesign.png";
+
+import sayingDetail1 from "../public/images/saying-detail-1.png";
+import sayingDetial2 from "../public/images/saying-detail-2.png";
+import sayingSeats from "../public/images/saying-seats.png";
+import sayingCrossCheck from "../public/images/saying-crosscheck.png";
+import sayingForm from "../public/images/saying-form.png";
+
 export const aboutIntro = `I’m a junior student at University of Wisconsin - Madison,
 studying Computer Science and Communication Arts, film track and
 also a software developer with emphasize on frontend. I expect to
@@ -116,25 +135,25 @@ export const codingProjects = [
         name: "map",
         intro:
           "Display all higher education institutions in the U.S. on an interactive map. User can zoom in and out to browse directly on the map, or use the simple search and filter function to find their prospective school to see its geographic location.",
-        image: "",
+        image: clMap,
       },
       {
         name: "database",
         intro:
           "Gather, clean, and display over 6000 institutions detailed information, including but not limited to admission rate, student composition, standard test scores. Raw data is from official sources and are designed to be readable and easy-to-interpret by general users.",
-        image: "",
+        image: clDB,
       },
       {
         name: "search",
         intro:
           "User can search by institution name to find the school in our database, or the user can use the provided filters to eliminate their results.",
-        image: "",
+        image: clSearch,
       },
       {
         name: "college list",
         intro:
           "After browsing over the school information, users can add schools to their list and make a school list for themselves, with customized ranking, ordering, and tagging. Users can then add their comment and notes on each school and edit the list in their personal dashboard.",
-        image: "",
+        image: clCL,
       },
     ],
     systemArchitecture: {
@@ -166,35 +185,35 @@ export const codingProjects = [
       "github actions",
     ],
     hasDetailImage: true,
-    detailImages: [collegelistdetail1, collegelistdetail2],
+    detailImages: [activityDetail2, activityDetail1],
     features: [
       {
         name: "OAuth",
         intro:
           "Connect user to our service via Epic’s MyChart, where patient can easily authenticate and share their health information with us using a single click.",
-        image: "",
+        image: activityOauth,
       },
       {
         name: "Activities",
         intro:
           "Local activities are imported to our database and will recommend to user by their geographic location. In the later phase, recommendation will based on user’s favors and their health conditions via machine learning.",
-        image: "",
+        image: activityActivity,
       },
       {
         name: "Records",
         intro:
           "User can save the recommended activities for later reference. They may also start/finish the activities to update the status of their saved activities.",
-        image: "",
+        image: activityRecord,
       },
       {
         name: "Rewards",
         intro:
           "When finished each activities, rewards points are granted to the user, which can be redeemed for git cards as incentive to help user keep track of their goals.",
-        image: "",
+        image: activityRewards,
       },
     ],
     systemArchitecture: {
-      image: "",
+      image: activityDesign,
       description: `Built front-end with Vue.js, using Element UI, Axios, and Vue i18n. \nProvided Restful API through Django, with Pandas and NumPy to generate customized college list. \nDeployed project with Docker and GitHub Actions to achieve continuous development and integration.`,
       alt: "Activity Go System Architecture",
     },
@@ -212,25 +231,26 @@ export const codingProjects = [
     description:
       "A ticket booking website for a theatre club with over 500 patrons per show.",
     techStack: ["node", "express", "bootstrap", "mongodb", "linux", "nginx"],
-    hasDetailImage: false,
+    hasDetailImage: true,
+    detailImages: [sayingDetail1, sayingDetial2],
     features: [
       {
         name: "Seats",
         intro:
           "With jQuery Seat Charts, patrons can select seats by interacting with a seat map. Multiple rules are added to avoid unexpected user behavior such as maximum seats, ect.",
-        image: "",
+        image: sayingSeats,
       },
       {
         name: "form",
         intro:
           "After the selection, patron is asked to fill out their personal information",
-        image: "",
+        image: sayingForm,
       },
       {
         name: "CrossCheck",
         intro:
           "When user select the seat, the seat will be locked so that other user have no access to it, and the seat will be freed and releases after 10minutes if the patron doesn’t proceed to the confirmation.",
-        image: "",
+        image: sayingCrossCheck,
       },
     ],
     systemArchitecture: {
@@ -241,11 +261,7 @@ export const codingProjects = [
   },
 ];
 
-export const filmIntro = `Coding and programming has become part of my daily life, and through
-building multiple programming project, I am deeply convinced that
-lines of code can actually make changes to daily life of human beings.
-Therefore, I want to share projects I’ve done with you and hope that
-they are inspiring.`;
+export const filmIntro = `As part of my hobbies and majors, film and short video contribute to much of my spare time. By producing, script writing, directing, and filming, I involved in a variety of video/short film project and practiced comprehensive skills and aesthetic tastes.`;
 
 export const featuredFilm = {
   name: "Rhinoceros In Love",
@@ -255,7 +271,7 @@ export const featuredFilm = {
   date: "May 2021",
   roles: ["Director", "Postproduction"],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
+    "Rhinoceros in Love is a famous Chinese modern love tragedy directed by Jinghui Meng. It features stream-of-consciousness lines and scenic design, with the pioneering idea of expressing the spark and gloom of a young pair. To reproduce such a great theatrical work under the physical constraints, we rehearsed and recorded the play via Zoom where actors and staff were isolated around the world. By deliberate conceive of screen layout and editing tricks, we tried our best to connect the interactions between characters on the screen.",
   youtubeURL: "https://www.youtube.com/watch?v=JSwKosGOIFc",
 };
 
@@ -274,7 +290,7 @@ export const filmProjects = [
       "Postproduction",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
+      "“Smiling depression” is a subset of depression disorder that the patients cover their depression by superficial happiness and it’s oblivious to others that he or she may suffer from huge emotional fluctuation. In this short PSA, I present such a protagonist with smiling depression who experiences a flood of emotion when she is alone. Filmed by iPhone Xr with ProTake.",
     youtubeURL: "https://www.youtube.com/watch?v=wIkZf37JIXM",
   },
   // {
@@ -296,7 +312,7 @@ export const filmProjects = [
     date: "June 2019",
     roles: ["Director", "Producer", "Cinematographer", "Postproduction"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
+      "When memory becomes illusion, and illusion becomes reality, will you feel cured, or will you be frightened. Shot by Sony FX5.",
     youtubeURL: "https://youtu.be/m_8cNjdE30o",
   },
 ];
