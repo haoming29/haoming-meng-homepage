@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import classNames from "classnames";
 import Image from "next/image";
 import Head from "next/head";
 import { navbar } from "../config";
@@ -48,9 +49,9 @@ const NavBar = ({ dark }) => {
           {navbar.map((item) => (
             <Link key={item.path} href={item.path}>
               <a
-                className={`${styles.navbarLink} link ${
-                  router.pathname === item.path && styles.navbarCurrent
-                }`}
+                className={classNames("link", styles.navbarLink, {
+                  [styles.navbarCurrent]: router.pathname === item.path,
+                })}
               >
                 {item.name}
               </a>
@@ -61,5 +62,4 @@ const NavBar = ({ dark }) => {
     </div>
   );
 };
-
 export default NavBar;

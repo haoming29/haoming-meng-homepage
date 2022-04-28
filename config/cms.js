@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import EFlogo from "../public/images/EF_Education_First_logo.jpeg";
 import YBlogo from "../public/images/yiban-logo.jpeg";
+import AI4AfricaLogo from "../public/images/AI-ARTWORK-CUTOUT-NEW.png";
 
 import collegelistLogo from "../public/images/logo-for-favicon.png";
 import collegelistThumbnail from "../public/images/collegelist-thumbnail.png";
@@ -41,20 +42,22 @@ internships.`;
 
 export const experience = [
   {
+    name: "AI4Africa",
+    title: "Software Development Lead",
+    companyLogo: AI4AfricaLogo,
+    companyLogoAlt: "AI4Africa logo",
+    date: "Jan. 2022 - Present",
+    location: "Madison, WI",
+    description: `Manage the software development team using Git and GitHub issues\nRestructure and refactor the 20 screens React Native Project and extract Firebase function calls from views\nComponentize view, and build customized UI library from scratch, reducing 100% of redundancy and improve style consistency\nIntegrate Stream instant messaging service, providing rich media messaging and group chat to the users`,
+  },
+  {
     name: "EF Education First",
     title: "Frontend intern",
     companyLogo: EFlogo,
     companyLogoAlt: "Education First logo",
     date: "Jun. 2021 - Aug. 2021",
     location: "Shanghai, China",
-    description: `Refactored the company’s virtual classroom operation website
-    using Typescript, React, and Node.js\n
-    Implemented Azure Active Directory to the project, providing SSO
-    ability via OAuth protocol\n
-    Built Docker image and deploy project on Kubernetes with Helm
-    chart and automated Jenkins workflow\n
-    Practiced uniformed coding style with code review and by
-    development tools such as ESlint, husky, prettier`,
+    description: `Refactored the company’s virtual classroom operation website using Typescript, React, and Node.js\nImplemented Azure Active Directory to the project, providing SSO ability via OAuth protocol\nBuilt Docker image and deploy project on Kubernetes with Helm chart and automated Jenkins workflow\nPracticed uniformed coding style with code review and by development tools such as ESlint, husky, prettier`,
   },
   {
     name: "Shanghai Yiban Enterprise Developement Co., Ltd.",
@@ -63,12 +66,7 @@ export const experience = [
     companyLogoAlt: "Education First logo",
     date: "Mar. 2021 - Jun. 2021",
     location: "Shanghai, China",
-    description: `Involved the front-end development for national-wide educational
-    management service with 100,000 DAU\n
-    Collected, reported, and fixed bugs of the company's Vue.js web
-    apps\n
-    Tested the UI components of company’s UI framework using Jest
-    and Vue Test Utils`,
+    description: `Involved the front-end development for national-wide educational management service with 100,000 DAU\nCollected, reported, and fixed bugs of the company's Vue.js web apps\nTested the UI components of company’s UI framework using Jest and Vue Test Utils`,
   },
 ];
 
@@ -77,18 +75,26 @@ export const skills = [
   "Java",
   "Javascript",
   "Typescript",
+  "C",
+  "C++",
   "Django",
+  "Flask",
+  "Spring",
   "Node.js",
   "React",
   "Vue",
-  "Flask",
+  "Next.js",
   "Webpack",
   "Babel",
   "Pandas",
   "Numpy",
   "MySQL",
+  "NoSQL",
+  "AWS",
+  "Firebase",
   "Git",
   "Docker",
+  "ELK",
   "CI/CD",
   "Scrum",
 ];

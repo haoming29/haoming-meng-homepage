@@ -29,8 +29,8 @@ a.navbarLink {
 }
 
 .navbarCurrent {
-  font-weight: 700;
-  color: white;
+  font-weight: 700 !important;
+  color: white !important;
 }
 
 .navbarLink {

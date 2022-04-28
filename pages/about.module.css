@@ -111,6 +111,7 @@
   font-size: 16px;
   line-height: 24px;
   /* or 150% */
+  white-space: pre-wrap;
 
   color: #00379e;
 }
