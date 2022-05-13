@@ -34,6 +34,7 @@ const Feature = ({ features }) => {
                   alt={features[current].name}
                   objectFit="cover"
                   layout="fill"
+                  loading="eager"
                 />
               )}
             </div>

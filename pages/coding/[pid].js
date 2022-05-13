@@ -79,7 +79,7 @@ const CodingDetail = ({ project }) => {
             </div>
           </section>
           {project.features && <Feature features={project.features} />}
-          {project.systemArchitecture && (
+          {project.systemArchitecture?.image && (
             <section className={styles.systemArchitecture}>
               <div className={styles.sectionHeading}>System Architecture</div>
               {project.systemArchitecture.image && (

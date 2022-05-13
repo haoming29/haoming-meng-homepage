@@ -20,6 +20,7 @@ import clSearch from "../public/images/guide-search-filter.jpg";
 import clCL from "../public/images/guide-school-note.png";
 import clMap from "../public/images/guide-map.png";
 import clDB from "../public/images/guide-database.png";
+import clSA from "../public/images/collegelist-SA.png";
 
 import activityDetail1 from "../public/images/activitygo-detail-1.png";
 import activityDetail2 from "../public/images/activitygo-detail-2.png";
@@ -164,7 +165,7 @@ export const codingProjects = [
       },
     ],
     systemArchitecture: {
-      image: "",
+      image: clSA,
       description: `Built front-end with Vue.js, using Element UI, Axios, and Vue i18n. \nProvided Restful API through Django, with Pandas and NumPy to generate customized college list. \nDeployed project with Docker and GitHub Actions to achieve continuous development and integration.`,
       alt: "College List System Architecture",
     },
@@ -221,7 +222,7 @@ export const codingProjects = [
     ],
     systemArchitecture: {
       image: activityDesign,
-      description: `Built front-end with Vue.js, using Element UI, Axios, and Vue i18n. \nProvided Restful API through Django, with Pandas and NumPy to generate customized college list. \nDeployed project with Docker and GitHub Actions to achieve continuous development and integration.`,
+      // description: `Built front-end with React.js, using Ant Design UI library, and Axios. \nProvided Restful API through Flask, with Pandas and NumPy to generate customized college list. \nDeployed project with Docker and GitHub Actions to achieve continuous development and integration.`,
       alt: "Activity Go System Architecture",
     },
   },
