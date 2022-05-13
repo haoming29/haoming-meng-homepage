@@ -76,7 +76,7 @@
   height: 100%;
   width: 100%;
   background-color: gray;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 .image {

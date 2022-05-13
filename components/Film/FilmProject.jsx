@@ -28,23 +28,37 @@ const FilmProject = ({
   return (
     <div className={`${styles.projectSection} ${top && styles.topProject}`}>
       <div className={styles.player}>
-        <div className={`${styles.imageContainer}`}>
-          {youtubeURL && (
-            <ReactPlayer
-              url={youtubeURL}
-              height={"100%"}
-              width={"100%"}
-              light={true}
-              playIcon={playIcon}
-              controls={true}
-              config={{
-                youtube: {
-                  playerVars: { modestbranding: 1, rel: 0 },
-                },
-              }}
+        {youtubeURL ? (
+          <ReactPlayer
+            url={youtubeURL}
+            height={"100%"}
+            width={"100%"}
+            light={true}
+            playIcon={playIcon}
+            controls={true}
+            config={{
+              youtube: {
+                playerVars: { modestbranding: 1, rel: 0 },
+              },
+            }}
+          />
+        ) : (
+          <div className={`${styles.texts} ${top && styles.topTexts}`}>
+            <div className={`${styles.type} ${top && styles.topType}`}>
+              {type}
+            </div>
+            <div className={`${styles.name} ${top && styles.topName}`}>
+              {name}
+            </div>
+            <FontAwesomeIcon
+              className={`${styles.icon} ${top && styles.topIcon}`}
+              icon={["far", "play-circle"]}
             />
-          )}
-        </div>
+            <div className={`${styles.imageContainer}`}>
+              <Image src={coverSrc} alt={coverAlt}></Image>
+            </div>
+          </div>
+        )}
       </div>
       <div className={styles.descriptions}>
         <div className={styles.dateRoles}>

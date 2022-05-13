@@ -11,6 +11,7 @@ import activityGoThumbnail from "../public/images/activitygo-thumbnail.png";
 import sayingLogo from "../public/images/sayingLogo.jpeg";
 import sayingThumbnail from "../public/images/theatrebooking-thumbnail.png";
 import RhinocerosInLove from "../public/images/RhinocerosInLove.png";
+import chineseBarber from "../public/images/ChineseBarber-Cover.jpg";
 
 import collegelistdetail1 from "../public/images/featured-image-1.png";
 import collegelistdetail2 from "../public/images/featured-image-2.png";
@@ -267,21 +268,31 @@ export const codingProjects = [
   },
 ];
 
-export const filmIntro = `As part of my hobbies and majors, film and short video contribute to much of my spare time. By producing, script writing, directing, and filming, I involved in a variety of video/short film project and practiced comprehensive skills and aesthetic tastes.`;
+export const filmIntro = `As one of my biggest hobbies and my second major, film watching and short film/video production contributes to another part of me. By producing, script writing, directing, filming, and editing, I involved in a variety of video/short film project and practiced comprehensive skills and aesthetic tastes.`;
 
 export const featuredFilm = {
-  name: "Rhinoceros In Love",
-  type: "Online Drama",
-  coverSrc: RhinocerosInLove,
-  coverAlt: "Rhinoceros In Love",
-  date: "May 2021",
-  roles: ["Director", "Postproduction"],
+  name: "Chinese Barber - Coming Soon",
+  type: "Documentary Short",
+  coverSrc: chineseBarber,
+  coverAlt: "Chinese Barber",
+  date: "May 2022",
+  roles: ["Director", "Producer", "Cinematographer", "Postproduction"],
   description:
-    "Rhinoceros in Love is a famous Chinese modern love tragedy directed by Jinghui Meng. It features stream-of-consciousness lines and scenic design, with the pioneering idea of expressing the spark and gloom of a young pair. To reproduce such a great theatrical work under the physical constraints, we rehearsed and recorded the play via Zoom where actors and staff were isolated around the world. By deliberate conceive of screen layout and editing tricks, we tried our best to connect the interactions between characters on the screen.",
-  youtubeURL: "https://www.youtube.com/watch?v=JSwKosGOIFc",
+    "Chinese Barber is a 15-minute (tentative) documentary short that observes the daily operations of Fashion Salon, a barbershop located in downtown Madison, Wisconsin run by a Chinese Barber Mrs. Chen Xuan that provides various Asian style haircuts to the local students and residents. Following Mrs. Chen’s life as a barber and a wife from a completely different country, this documentary will try to unveil how Chinese immigrants try to fit themselves into a foreign country and how they contribute to the diversity of the local community.",
 };
 
 export const filmProjects = [
+  {
+    name: "Rhinoceros In Love",
+    type: "Online Drama",
+    coverSrc: RhinocerosInLove,
+    coverAlt: "",
+    date: "May 2021",
+    roles: ["Director", "Postproduction"],
+    description:
+      "Rhinoceros in Love is a famous Chinese modern love tragedy directed by Jinghui Meng. It features stream-of-consciousness lines and scenic design, with the pioneering idea of expressing the spark and gloom of a young pair. To reproduce such a great theatrical work under the physical constraints, we rehearsed and recorded the play via Zoom where actors and staff were isolated around the world. By deliberate conceive of screen layout and editing tricks, we tried our best to connect the interactions between characters on the screen.",
+    youtubeURL: "https://www.youtube.com/watch?v=JSwKosGOIFc",
+  },
   {
     name: "She Was Smiling #MentalHealth PSA",
     type: "Short Film",
