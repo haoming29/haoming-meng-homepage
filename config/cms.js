@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import EFlogo from "../public/images/EF_Education_First_logo.jpeg";
 import YBlogo from "../public/images/yiban-logo.jpeg";
 import AI4AfricaLogo from "../public/images/AI-ARTWORK-CUTOUT-NEW.png";
+import BevyLogo from "../public/images/bevy-logo.png";
 
 import collegelistLogo from "../public/images/logo-for-favicon.png";
 import collegelistThumbnail from "../public/images/collegelist-thumbnail.png";
@@ -36,19 +35,26 @@ import sayingSeats from "../public/images/saying-seats.png";
 import sayingCrossCheck from "../public/images/saying-crosscheck.png";
 import sayingForm from "../public/images/saying-form.png";
 
-export const aboutIntro = `I’m a junior student at University of Wisconsin - Madison,
-studying Computer Science and Communication Arts, film track and
-also a software developer with emphasize on frontend. I expect to
-graduate in summer 2023 and am actively seeking for summer
-internships.`;
+export const aboutIntro = `I’m a senior at University of Wisconsin - Madison,
+studying Computer Science and Communication Arts (film track) and a software developer with emphasize on frontend. I'm expected to
+graduate in summer 2023. I'm actively seeking for full-time positions.`;
 
 export const experience = [
+  {
+    name: "Bevy Inc.",
+    title: "Software Developer Intern",
+    companyLogo: BevyLogo,
+    companyLogoAlt: "Bevy logo",
+    date: "Jun. 2022 - Aug. 2022",
+    location: "Remote",
+    description: `Migrate instant chat feature from custom fork to Stream equivalence and refactored the virtualized message list\nRebuilt an accessible and intuitive “End event” flow for the virtual event, reducing 60% of related support tickets\nDesigned, built, and tested a new recording flow for virtual events with comprehensive UI/UX experience\nFixed and tested 5 defects in the platform and the internal UI library with Jest, React Testing Library, and Mocha`,
+  },
   {
     name: "AI4Africa",
     title: "Software Development Lead",
     companyLogo: AI4AfricaLogo,
     companyLogoAlt: "AI4Africa logo",
-    date: "Jan. 2022 - Present",
+    date: "Jan. 2022 - Aug. 2022",
     location: "Madison, WI",
     description: `Manage the software development team using Git and GitHub issues\nRestructure and refactor the 20 screens React Native Project and extract Firebase function calls from views\nComponentize view, and build customized UI library from scratch, reducing 100% of redundancy and improve style consistency\nIntegrate Stream instant messaging service, providing rich media messaging and group chat to the users`,
   },
@@ -103,7 +109,7 @@ export const skills = [
 
 export const funFacts = [
   "I’m 6’ 3’’ tall.",
-  "I was a director of a theater play during pandemic.",
+  "I was a director of a theater play during the lockdown in pandemic.",
   "I don’t play basketball. lol",
 ];
 

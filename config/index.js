@@ -16,7 +16,7 @@ export const navbar = [
   },
   {
     name: "Blog",
-    path: "/blog",
+    path: "https://techming.notion.site/techming/Blog-MINGX-c7d9139fb36e4a5089cc98a83019e25b",
   },
 ];
 

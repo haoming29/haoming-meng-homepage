@@ -7,7 +7,7 @@ const Heading = () => {
       <div className={`container ${styles.headingContainer}`}>
         <div className={styles.headingName}>Haoming Meng</div>
         <div className={styles.headingPosition}>
-          Student & Software Developer & Film Maker
+          Software Developer, Film Maker, Stage Hand 
         </div>
         <div
           className={`${styles.headingMainHeadline} ${styles.headingMainHeadlineHey}`}

@@ -42,24 +42,31 @@
   margin: 20px 0 60px 0;
 }
 
+.experienceLogoName{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
 .experienceName {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
-
   color: #00379e;
 }
 
 .expericenLogoContainer {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 36px;
   height: 36px;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
   margin-right: 10px;
   border-radius: 18px;
+  overflow: hidden;
   background-color: white;
 }
 

@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import Head from "next/head";
+import Zoom from 'react-medium-image-zoom'
 import { title } from "../../utils";
 import MajorLayout from "../../components/layouts/MajorLayout";
 import TechStackIcon from "../../components/common/TechStackIcon";
@@ -84,14 +84,15 @@ const CodingDetail = ({ project }) => {
               <div className={styles.sectionHeading}>System Architecture</div>
               {project.systemArchitecture.image && (
                 <div className={styles.systemArchitectureImage}>
-                  <div className={styles.systemArchitectureImageContainer}>
+                  <Zoom>
                     <Image
                       src={project.systemArchitecture.image}
                       alt={project.systemArchitecture.alt}
-                      objectFit="contain"
-                      layout="fill"
-                    ></Image>
-                  </div>
+                      className={styles.systemArchitectureImageContainer}
+                      // objectFit="cover"
+                      // layout="fill"
+                    />
+                  </Zoom>
                   <div className={styles.systemArchitectureImageDescription}>
                     {project.systemArchitecture.description}
                   </div>

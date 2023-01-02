@@ -14,9 +14,10 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "classnames": "^2.3.1",
-    "next": "12.0.7",
+    "next": "12.3.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-medium-image-zoom": "^5.1.2",
     "react-player": "^2.9.0"
   },
   "devDependencies": {

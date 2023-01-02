@@ -55,7 +55,9 @@ const about = () => {
             <div className="page-heading">{`I’m Haoming Meng`}</div>
             <div className="page-description">{aboutIntro}</div>
             <div className={styles.buttonContainer}>
-              <Button>Resume</Button>
+              <Button 
+               external
+               href="https://www.linkedin.com/in/haomingmeng/">Resume</Button>
             </div>
           </div>
           <div className={styles.introSectionHeadingImageContainer}>
@@ -72,15 +74,15 @@ const about = () => {
           <div className={styles.sectionHeader}>Experience</div>
           {experience.map((item) => (
             <div key={item.name} className={styles.experienceInstance}>
-              <div className={styles.experienceName}>
+              <div className={styles.experienceLogoName}>
                 <div className={styles.expericenLogoContainer}>
                   <Image
                     src={item.companyLogo}
                     alt={item.companyLogoAlt}
-                    className={styles.expericenLogo}
+                    objectFit='cover'
                   />
                 </div>
-                {item.name}
+                <div className={styles.experienceName}>{item.name}</div>
               </div>
               <div className={styles.expericenDetail}>
                 <div className={styles.experienceAttributes}>
@@ -99,7 +101,7 @@ const about = () => {
           <div className={styles.sectionHeader}>Technical Skills</div>
           <div className={styles.skillsContent}>
             <div className={styles.skillsIntro}>
-              With two internships and multiple full-stack project experiences,
+              With four internships and multiple full-stack project experiences,
               I grasped programming languages including Python, Java, and
               Javascript, packages such as Numpy, Pandas, Babel, Webpack, and
               web frameworks like React, Vue, Flask, Django.
