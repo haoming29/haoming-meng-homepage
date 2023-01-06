@@ -1,8 +1,7 @@
 .grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  flex-wrap: wrap;
-  width: 1320px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  max-width: 1320px;
   margin: 80px auto 60px auto;
 }

@@ -3,15 +3,10 @@
   flex-direction: column;
   margin: 20px 15px 10px 15px;
   height: 525px;
-  width: 720px;
 }
 
 .gridbox:hover {
   cursor: pointer;
-}
-
-.gridbox:nth-child(2n) {
-  width: 540px;
 }
 
 .imageContainer {
