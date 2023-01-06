@@ -5,7 +5,7 @@ import { title } from "../../utils";
 import MajorLayout from "../../components/layouts/MajorLayout";
 import TechStackIcon from "../../components/common/TechStackIcon";
 import { codingProjects } from "../../config/cms";
-import styles from "./projectDetail.module.css";
+import styles from "./projectDetail.module.scss";
 import Button from "../../components/common/Button";
 import Feature from "../../components/Coding/Feature";
 

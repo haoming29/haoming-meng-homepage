@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import Image from "next/image";
-import styles from "./IntroSection.module.css";
+import styles from "./IntroSection.module.scss";
 
 const IntroSection = ({
   heading,

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import TechStackIcon from "../common/TechStackIcon";
-import styles from "./ProjectSection.module.css";
+import styles from "./ProjectSection.module.scss";
 import Link from "next/link";
 
 const ProjectSection = ({

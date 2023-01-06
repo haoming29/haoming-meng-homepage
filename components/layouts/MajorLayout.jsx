@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "../Footer";
 import NavBar from "../NavBar";
-import styles from "./MajorLayout.module.css";
+import styles from "./MajorLayout.module.scss";
 
 const MajorLayout = ({ title, description, children }) => {
   return (

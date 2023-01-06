@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Image from "next/image";
 import Head from "next/head";
 import { navbar } from "../config";
-import styles from "./NavBar.module.css";
+import styles from "./NavBar.module.scss";
 import logo from "../public/portfolio-website-logo.png";
 import Link from "next/link";
 

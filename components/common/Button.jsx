@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import styles from "./Button.module.css";
+import styles from "./Button.module.scss";
 
 const Button = ({ href, external, icon, onClick, children }) => {
   const onClickHelper = (event) => {

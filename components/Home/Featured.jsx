@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { useRouter } from "next/router";
-import styles from "./Featured.module.css";
+import styles from "./Featured.module.scss";
 import featuredImg1 from "../../public/images/featured-image-1.png";
-import featuredImg2 from "../../public/images/featured-image-2.png";
 import TechStackIcon from "../common/TechStackIcon";
 
 const Featured = () => {

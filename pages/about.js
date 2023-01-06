@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MajorLayout from "../components/layouts/MajorLayout";
-import styles from "./about.module.css";
+import styles from "./about.module.scss";
 import sectionImage from "../public/images/business-3d-318.png";
 import Image from "next/image";
 import Button from "../components/common/Button";

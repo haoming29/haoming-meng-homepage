@@ -5,7 +5,7 @@ import FilmProject from "../components/Film/FilmProject";
 import MajorLayout from "../components/layouts/MajorLayout";
 import HeadingImage from "../public/images/3d-flame-camera-polaroid-3.png";
 import { title } from "../utils";
-import styles from "./film.module.css";
+import styles from "./film.module.scss";
 import { featuredFilm, filmIntro, filmProjects } from "../config/cms";
 
 const Coding = () => {

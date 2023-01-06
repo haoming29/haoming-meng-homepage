@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player/youtube";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./FilmProject.module.css";
+import styles from "./FilmProject.module.scss";
 
 const FilmProject = ({
   top,

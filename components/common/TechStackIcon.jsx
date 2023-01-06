@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import styles from "./TechStackIcon.module.css";
+import styles from "./TechStackIcon.module.scss";
 
 const TechStackIcon = ({ icon, light }) => {
   const iconMapping = {

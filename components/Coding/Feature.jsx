@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import styles from "./Feature.module.css";
+import styles from "./Feature.module.scss";
 
 const Feature = ({ features }) => {
   const [current, setCurrent] = useState(0);
