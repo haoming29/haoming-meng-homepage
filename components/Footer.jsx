@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialMedia } from "../config";
 
 const Footer = () => {
-  const dateTimeStamp = new Date("2023-01-02");
+  const dateTimeStamp = new Date("2023-01-07");
   return (
     <footer className={styles.footer}>
       <div className={styles.socialMediaContainer}>
