@@ -3,6 +3,7 @@ import ReactPlayer from "react-player/youtube";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./FilmProject.module.scss";
+import classNames from "classnames";
 
 const FilmProject = ({
   top,
@@ -27,7 +28,11 @@ const FilmProject = ({
   );
   return (
     <div className={`${styles.projectSection} ${top && styles.topProject}`}>
-      <div className={styles.player}>
+      <div
+        className={classNames(styles.player, {
+          [styles.playerTop]: top,
+        })}
+      >
         {youtubeURL ? (
           <ReactPlayer
             url={youtubeURL}

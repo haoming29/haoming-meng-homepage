@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .featured:hover {
   cursor: pointer;
 }
@@ -39,7 +41,7 @@
 
 .description {
   margin-top: 60px;
-  width: 420px;
+  max-width: 420px;
   color: rgba(0, 67, 193, 0.75);
   font-size: 16px;
   line-height: 24px;
@@ -70,8 +72,27 @@
   margin: 40px 10px 0 0;
 }
 
-.image2 {
-  width: 314px;
-  height: 505px;
-  margin: 100px 0 0 10px;
+@include laptop() {
+  .texts {
+    margin-right: 0;
+  }
+}
+
+@include tablet() {
+  .texts {
+    margin-right: 0;
+  }
+  .image1 {
+    display: none;
+  }
+}
+
+@include mobile() {
+  .texts {
+    margin-top: 60px;
+    margin-right: 0;
+  }
+  .image1 {
+    display: none;
+  }
 }

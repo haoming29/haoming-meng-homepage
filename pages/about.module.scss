@@ -1,3 +1,5 @@
+@import "../styles/mixins";
+
 .section {
   margin-top: 100px;
   margin-bottom: 150px;
@@ -13,6 +15,7 @@
 }
 
 .introSection {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,7 +25,7 @@
 
 .introSectionTexts {
   margin-top: 90px;
-  width: 540px;
+  max-width: 540px;
 }
 
 .introSectionHeadingImageContainer {
@@ -42,7 +45,7 @@
   margin: 20px 0 60px 0;
 }
 
-.experienceLogoName{
+.experienceLogoName {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -162,10 +165,12 @@
 
 .funfactsContainer {
   display: flex;
+  overflow-x: auto;
 }
 
 .funfact {
   width: 240px;
+  min-width: 160px;
   margin: 0 50px;
 }
 
@@ -224,4 +229,105 @@
   /* identical to box height */
 
   color: #00379e;
+}
+
+@include tablet() {
+  .section {
+    margin-top: 90px;
+    margin-bottom: 75px;
+  }
+  .introSection {
+    padding-right: 0px;
+  }
+  .introSectionTexts {
+    max-width: none;
+    width: 100%;
+    background-color: #f5f9ffbf;
+    z-index: 2;
+  }
+  .introSectionHeadingImageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .skillsContent {
+    flex-direction: column;
+  }
+
+  .skillsIntro {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+  }
+  .skillsGrid {
+    margin-top: 30px;
+  }
+
+  .skillsGridItem {
+    font-size: 22px;
+    line-height: 175%;
+  }
+}
+
+@include mobile() {
+  .section {
+    margin-top: 90px;
+    margin-bottom: 75px;
+  }
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+  .introSection {
+    padding-right: 0px;
+  }
+  .introSectionTexts {
+    max-width: none;
+    width: 100%;
+    background-color: #f5f9ffcf;
+    z-index: 2;
+  }
+  .introSectionHeadingImageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  .expericenDetail {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .experienceAttributes {
+    margin-right: 0;
+    flex: 0;
+
+    .experienceTitle {
+      margin-bottom: 10px;
+    }
+  }
+
+  .expericenDescription {
+    margin-top: 20px;
+    padding-left: 46px;
+  }
+
+  .skillsContent {
+    flex-direction: column;
+  }
+
+  .skillsIntro {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-top: 0;
+  }
+  .skillsGrid {
+    margin-top: 30px;
+  }
+
+  .skillsGrid {
+    overflow: auto;
+  }
 }

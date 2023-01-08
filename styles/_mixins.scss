@@ -1,0 +1,49 @@
+@import "variables";
+
+@mixin desktop() {
+  @media screen and (width >= $breakpoint-xlarge) {
+    @content;
+  }
+}
+
+@mixin laptopLarge() {
+  @media screen and ($breakpoint-large <= width <= $breakpoint-xlarge) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media screen and ($breakpoint-medium <= width <= $breakpoint-large) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and ($breakpoint-small <= width <= $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media screen and (width <= $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin mobileToTalet() {
+  @media screen and (width <= $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin mobileToLaptopLarge() {
+  @media screen and (width <= $breakpoint-xlarge) {
+    @content;
+  }
+}
+
+@mixin tabletToDesktop() {
+  @media screen and (width > $breakpoint-small) {
+    @content;
+  }
+}

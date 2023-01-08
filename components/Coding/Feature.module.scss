@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .featuresSection {
   margin: 100px 0;
 }
@@ -54,4 +56,41 @@
   font-size: 16px;
   line-height: 24px;
   color: #00379e;
+}
+
+@include tablet() {
+  .featureName {
+    font-size: 50px;
+    line-height: 150%;
+    margin-bottom: 14px;
+  }
+  .featureList {
+    margin-right: 20px;
+  }
+}
+
+@include mobile() {
+  .features {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .featureList {
+    display: flex;
+    overflow-x: auto;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .featureName {
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 24px;
+    line-height: 150%;
+    white-space: nowrap;
+  }
+
+  .featureContainer {
+    width: 100%;
+  }
 }

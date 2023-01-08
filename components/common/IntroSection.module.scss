@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .introSection {
   display: flex;
   flex-direction: row;
@@ -22,4 +24,63 @@
 
 .buttonContainer {
   margin-top: 40px;
+}
+
+@include tablet() {
+  .introSection {
+    padding-right: 0px;
+  }
+  .introSectionTexts {
+    max-width: none;
+    width: 100%;
+    background-color: #f5f9ffbf;
+    z-index: 2;
+  }
+  .introSectionTextsDark {
+    background-color: #1f1f236a;
+  }
+  .introSectionHeadingImageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+  .introSectionHeadingImage {
+    width: 304px !important;
+    height: 392px !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+}
+
+@include mobile() {
+  .introSection {
+    padding-right: 0px;
+  }
+  .introSectionTexts {
+    max-width: none;
+    width: 100%;
+    background-color: #f5f9ffcf;
+    z-index: 2;
+  }
+  .introSectionTextsDark {
+    background-color: #1f1f236a;
+  }
+  .introSectionHeadingImageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+  .introSectionHeadingImage {
+    width: 304px !important;
+    height: 392px !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: hidden;
+  }
 }

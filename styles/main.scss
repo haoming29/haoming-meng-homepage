@@ -1,3 +1,5 @@
+@import "mixins";
+
 html,
 body {
   padding: 0;
@@ -53,4 +55,10 @@ a {
 
 .page-dark {
   color: #f5f9ff;
+}
+
+@include mobileToLaptopLarge() {
+  .container {
+    margin: 0 20px;
+  }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import Image from "next/image";
 import styles from "./IntroSection.module.scss";
+import classNames from "classnames";
 
 const IntroSection = ({
   heading,
@@ -17,7 +18,11 @@ const IntroSection = ({
 }) => {
   return (
     <section className={`${styles.introSection}`}>
-      <div className={styles.introSectionTexts}>
+      <div
+        className={classNames(styles.introSectionTexts, {
+          [styles.introSectionTextsDark]: dark,
+        })}
+      >
         <text className={`page-subheading ${dark && "page-dark"}`}>
           {subheading}
         </text>

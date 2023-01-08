@@ -46,9 +46,13 @@ const ProjectSection = ({
             ))}
           </div>
         </div>
-        <div className={styles.image}>
+        <div className={styles.imageContainer}>
           {thumbnailSrc && (
-            <Image src={thumbnailSrc} alt={thumbnailAlt}></Image>
+            <Image
+              className={styles.image}
+              src={thumbnailSrc}
+              alt={thumbnailAlt}
+            />
           )}
         </div>
       </div>

@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .projectOverview {
   display: flex;
   margin: 0 0 100px 0;
@@ -124,4 +126,34 @@
   font-size: 14px;
   line-height: 21px;
   color: rgba(0, 55, 158, 0.7);
+}
+
+@include tablet() {
+  .texts {
+    margin-right: 20px;
+  }
+  .detailImages {
+    width: 50%;
+    max-width: 356px;
+    margin-right: 0;
+  }
+
+  .detailImageContainer {
+    right: 0;
+    max-width: 300px;
+  }
+
+  .detailImageContainer:nth-child(2) {
+    display: none;
+  }
+}
+
+@include mobile() {
+  .detailImages {
+    display: none;
+  }
+  .texts {
+    margin-right: 0;
+    margin-top: 80px;
+  }
 }
