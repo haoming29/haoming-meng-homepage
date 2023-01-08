@@ -1,5 +1,8 @@
+@import "../../styles/mixins";
+
 .projectSection {
-  min-width: 490px;
+  height: 100%;
+  width: 100%;
   margin: 20px 0 50px 0;
   color: white;
 }
@@ -10,15 +13,10 @@
 
 .player {
   position: relative;
-  min-height: 285px;
+  width: 100%;
   aspect-ratio: 1.777;
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.6));
 }
-
-// .playerTop {
-//   max-height: none;
-//   height: 100%;
-// }
 
 .texts {
   display: flex;
@@ -107,6 +105,7 @@
 
 .roles {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .role {
