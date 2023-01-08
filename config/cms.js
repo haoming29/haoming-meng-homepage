@@ -237,7 +237,7 @@ export const codingProjects = [
     id: "theatre-booking-website",
     link: "https://mingx.tech/",
     type: "Web App",
-    date: "Sep.2019 – Mar. 2021",
+    date: "Sep.2019 – Mar. 2020",
     role: "Personal Project",
     logoSrc: sayingLogo,
     thumbnailSrc: sayingThumbnail,
