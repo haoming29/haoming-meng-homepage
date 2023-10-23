@@ -12,6 +12,12 @@ import sayingLogo from "../public/images/sayingLogo.jpeg";
 import sayingThumbnail from "../public/images/theatrebooking-thumbnail.png";
 import RhinocerosInLove from "../public/images/RhinocerosInLove.png";
 import chineseBarber from "../public/images/ChineseBarber-Cover.jpg";
+import me2vshe2 from "../public/images/me2-vs-he2-cover.jpeg";
+import thePillowman from "../public/images/the-pillowman.jpg";
+import revival from "../public/images/revival.PNG";
+import anEndlessPoetry from "../public/images/an-endless-poetry.png";
+import samaraJoy from "../public/images/samara-joy.jpeg";
+import cssa2023 from "../public/images/cssa-2023-spring-fesival.png";
 
 import collegelistdetail1 from "../public/images/featured-image-1.png";
 import collegelistdetail2 from "../public/images/featured-image-2.png";
@@ -285,7 +291,7 @@ export const codingProjects = [
   },
 ];
 
-export const filmIntro = `As one of my biggest hobbies and my second major, film watching and short film/video production contributes to another part of me. By producing, script writing, directing, filming, and editing, I involved in a variety of video/short film project and practiced comprehensive skills and aesthetic tastes.`;
+export const filmIntro = `As my second major, watching films and producing short film/video contribute to one important part of my life. By producing, script writing, directing, filming, and editing, I involved in a variety of video/short film project and practiced comprehensive skills and aesthetic tastes.`;
 
 export const featuredFilm = {
   name: "Chinese Barber - Coming Soon",
@@ -327,17 +333,6 @@ export const filmProjects = [
       "“Smiling depression” is a subset of depression disorder that the patients cover their depression by superficial happiness and it’s oblivious to others that he or she may suffer from huge emotional fluctuation. In this short PSA, I present such a protagonist with smiling depression who experiences a flood of emotion when she is alone. Filmed by iPhone Xr with ProTake.",
     youtubeURL: "https://www.youtube.com/watch?v=wIkZf37JIXM",
   },
-  // {
-  //   name: "Final Prize",
-  //   type: "Short Film",
-  //   coverSrc: "",
-  //   coverAlt: "",
-  //   date: "Dec 2020",
-  //   roles: ["Director", "Producer", "Cinematographer", "Postproduction"],
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim dui mattis metus. Sodales mollis consequat, integer eu. Fringilla elementum morbi est nullam ut. Adipiscing diam, est ornare bibendum leo, varius. Nunc nunc nisl vel tempus non ipsum. Sed vitae malesuada fermentum, aliquam tincidunt fermentum. Nunc habitasse nulla id lorem purus quisque.",
-  //   youtubeURL: "",
-  // },
   {
     name: "Memory Blocked",
     type: "Short Film",
@@ -348,5 +343,93 @@ export const filmProjects = [
     description:
       "When memory becomes illusion, and illusion becomes reality, will you feel cured, or will you be frightened. Shot by Sony FX5.",
     youtubeURL: "https://youtu.be/m_8cNjdE30o",
+  },
+];
+
+export const theaterIntro = `Theater is my dream place. Starting as a student stagehand during my freshman year at my school's theater, I stepped into this wonderland and immediately got trapped by the fascinating work people have done in theater. During college time, I grew to be a technical director at Saying Theatre Club as well as an audio specialist at Wisconsin Union Theatre. Mixing audio for live performance and putting up a show from script shaped my theater life.`;
+
+export const featuredTheaterWork = {
+  name: "Me2 and He2",
+  type: "Drama",
+  coverSrc: me2vshe2,
+  coverAlt: "Me2 and He2 cover image",
+  date: "April 2023",
+  roles: ["Technical Director"],
+  description:
+    'Me2 vs He2 tells the story of More from mainland China and Jing from Taiwan, who meet during a business negotiation in Hong Kong about the merger of their two companies. Along the way, they meet two mysterious people who claim to be their past selves from ten years ago, eager to help them retrieve their lost memories. However, no one can see these two people except themselves. Through their "past selves," they discover that they once knew each other and even had a promise of eternal love. Note that this video is in Chinese.',
+  youtubeURL: "https://youtu.be/TUQDG1scSSM?si=HbslVQykdfG8HDsW",
+};
+
+export const theaterProjects = [
+  {
+    name: "Samara Joy - Madison Concert",
+    type: "Live Concert",
+    coverSrc: samaraJoy,
+    coverAlt: "Samara Joysa cover image",
+    date: "May 2023",
+    roles: ["OB Audio Engineer"],
+    description:
+      "Twenty-three-year-old jazz singer Samara Joy has been celebrated for her effortless control of timeless jazz standards. Just a few months after winning her first two GRAMMY Awards, including the coveted award for Best New Artist, she will showcase her smooth, mature vocals when she performs at Shannon Hall in Memorial Union on May 4 at 7:30 p.m. CST. Joy’s performance is part of the Wisconsin Union Theater’s 2022-23 Jazz Series.      ",
+  },
+  {
+    name: "Revival Band Spring 2023 Showcase",
+    type: "Live Concert",
+    coverSrc: revival,
+    coverAlt: "Revival Band Spring 2023 Showcase cover image",
+    date: "April 2023",
+    roles: ["Audio Engineer"],
+    description:
+      "Revival Band is a Chinese band at Madison, WI who brings Chinese pop music to the campus community. They brought over 15 songs for their spring 2023 showcase.",
+  },
+  {
+    name: "CSSA 2023 Spring Festival Gala",
+    type: "Gala",
+    coverSrc: cssa2023,
+    coverAlt: "CSSA 2023 Spring Festival Gala cover image",
+    date: "Jan 2023",
+    roles: ["Audio Engineer", "Lead Stagehand"],
+    description:
+      "Spring Festival Gala is a yearly show brought by UW-Madison Chinese Student and Scholars Association (CSSA) during Chinese Spring Festival, featuring live band, dancing, singing, talk show, and Chinese traditional shows. This year the gala has 8 wireless channels, 2 live bands, 40 audio inputs and more than 10 outputs.  Note that this video is in Chinese.",
+    youtubeURL: "https://www.youtube.com/live/59SVrnXAkpY?si=NMY3GVMru046ArRR",
+  },
+  {
+    name: "An Endless Poetry - Foundland Musical",
+    type: "Musical",
+    coverSrc: anEndlessPoetry,
+    coverAlt: "An Endless Poetry cover image",
+    date: "Nov 2022",
+    roles: ["Audio Engineer"],
+    description:
+      "An Endless Poetry is an original Chinese musical by Foundland Musical. Note that this video is in Chinese.",
+    youtubeURL: "https://www.bilibili.com/video/BV1eW4y157V4",
+  },
+  {
+    name: "The Pillowman - Saying Theatre",
+    type: "Drama",
+    coverSrc: thePillowman,
+    coverAlt: "The Pillowman - Saying Theatre cover image",
+    date: "April 2022",
+    roles: ["Technical Director", "Lighting Designer"],
+    description:
+      "The Pillowman is a 2003 play by British-Irish playwright Martin McDonagh.  It tells the tale of Katurian, a fiction writer living in a police state, who is interrogated about the gruesome content of his short stories and their similarities to a number of bizarre child murders occurring in his town. Note that this video is in Chinese.",
+    youtubeURL: "https://www.bilibili.com/video/BV1TY4y1b7LX/",
+  },
+  {
+    name: "CSSA 2022 Spring Festival Gala",
+    type: "Gala",
+    date: "Jan 2022",
+    roles: ["Stage Manager"],
+    description:
+      "Spring Festival Gala is a yearly show brought by UW-Madison Chinese Student and Scholars Association (CSSA) during Chinese Spring Festival, featuring live band, dancing, singing, talk show, and Chinese traditional shows.",
+    youtubeURL: "https://www.youtube.com/watch?v=LPuIUYQmQr0",
+  },
+  {
+    name: "CSSA 2020 Spring Festival Gala",
+    type: "Gala",
+    date: "Jan 2020",
+    roles: ["Audio Engineer"],
+    description:
+      "Spring Festival Gala is a yearly show brought by UW-Madison Chinese Student and Scholars Association (CSSA) during Chinese Spring Festival, featuring live band, dancing, singing, talk show, and Chinese traditional shows.",
+    youtubeURL: "https://www.youtube.com/watch?v=GX2KXY3AqNk",
   },
 ];

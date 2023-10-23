@@ -11,6 +11,10 @@ export const navbar = [
     path: "/coding",
   },
   {
+    name: "Theater",
+    path: "/theater",
+  },
+  {
     name: "Film",
     path: "/film",
   },

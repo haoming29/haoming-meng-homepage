@@ -3,50 +3,54 @@ import Head from "next/head";
 import IntroSection from "../components/common/IntroSection";
 import FilmProject from "../components/Film/FilmProject";
 import MajorLayout from "../components/layouts/MajorLayout";
-import HeadingImage from "../public/images/3d-flame-camera-polaroid-3.png";
+import HeadingImage from "../public/images/3d-construction-construction-abstract-glass.png";
 import { title } from "../utils";
 import styles from "./film.module.scss";
-import { featuredFilm, filmIntro, filmProjects } from "../config/cms";
+import {
+  featuredTheaterWork,
+  theaterIntro,
+  theaterProjects,
+} from "../config/cms";
 
-const Film = () => {
+const Theater = () => {
   return (
     <MajorLayout>
       <Head>
-        <title>{`${title("Film")}`}</title>
+        <title>{`${title("Theater")}`}</title>
       </Head>
       <style jsx global>{`
         body {
-          background: #1f1f23;
+          background: #261515;
           color: #f5f9ff;
         }
       `}</style>
       <div className="container">
         <IntroSection
           dark={true}
-          heading={"FILM"}
+          heading={"THEATER"}
           imageSrc={HeadingImage}
-          imageHeight={418}
-          imageWidth={423}
-          imageAlt={"a Polaroid like shop"}
+          imageHeight={400}
+          imageWidth={392}
+          imageAlt={"3d-construction-construction-abstract-glass"}
         >
-          {filmIntro}
+          {theaterIntro}
         </IntroSection>
         <div className={styles.featuredFilm}>
           <FilmProject
             top={true}
-            key={featuredFilm.name}
-            name={featuredFilm.name}
-            type={featuredFilm.type}
-            coverSrc={featuredFilm.coverSrc}
-            coverAlt={featuredFilm.coverAlt}
-            date={featuredFilm.date}
-            roles={featuredFilm.roles}
-            description={featuredFilm.description}
-            youtubeURL={featuredFilm.youtubeURL}
+            key={featuredTheaterWork.name}
+            name={featuredTheaterWork.name}
+            type={featuredTheaterWork.type}
+            coverSrc={featuredTheaterWork.coverSrc}
+            coverAlt={featuredTheaterWork.coverAlt}
+            date={featuredTheaterWork.date}
+            roles={featuredTheaterWork.roles}
+            description={featuredTheaterWork.description}
+            youtubeURL={featuredTheaterWork.youtubeURL}
           />
         </div>
         <div className={styles.filmProjects}>
-          {filmProjects.map((item) => (
+          {theaterProjects.map((item) => (
             <FilmProject
               key={item.name}
               name={item.name}
@@ -65,4 +69,4 @@ const Film = () => {
   );
 };
 
-export default Film;
+export default Theater;

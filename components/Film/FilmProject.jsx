@@ -16,6 +16,25 @@ const FilmProject = ({
   roles,
   description,
 }) => {
+  const isYoutubeURL =
+    youtubeURL &&
+    !youtubeURL.startsWith("https://www.youtube.com/live/") &&
+    (youtubeURL.startsWith("https://www.youtube.com") ||
+      youtubeURL.startsWith("https://youtu.be"));
+
+  const handleCoverClick = (url) => {
+    if (!url) {
+      return;
+    }
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.referrerPolicy = "noopener,noreferrer";
+    link.hidden = true;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const playIcon = (
     <div className={`${styles.texts} ${top && styles.topTexts}`}>
       <div className={`${styles.type} ${top && styles.topType}`}>{type}</div>
@@ -33,7 +52,7 @@ const FilmProject = ({
           [styles.playerTop]: top,
         })}
       >
-        {youtubeURL ? (
+        {isYoutubeURL ? (
           <ReactPlayer
             url={youtubeURL}
             height={"100%"}
@@ -48,7 +67,12 @@ const FilmProject = ({
             }}
           />
         ) : (
-          <div className={`${styles.texts} ${top && styles.topTexts}`}>
+          <div
+            className={`${styles.texts} ${top && styles.topTexts}`}
+            onClick={() => {
+              handleCoverClick(youtubeURL);
+            }}
+          >
             <div className={`${styles.type} ${top && styles.topType}`}>
               {type}
             </div>
@@ -60,7 +84,11 @@ const FilmProject = ({
               icon={["far", "play-circle"]}
             />
             <div className={`${styles.imageContainer}`}>
-              <Image src={coverSrc} alt={coverAlt}></Image>
+              <Image
+                className={`${styles.image}`}
+                src={coverSrc}
+                alt={coverAlt}
+              ></Image>
             </div>
           </div>
         )}
