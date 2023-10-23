@@ -7,18 +7,21 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "18"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "classnames": "^2.3.1",
     "next": "12.3.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-medium-image-zoom": "^5.1.2",
-    "react-player": "^2.9.0"
+    "react-medium-image-zoom": "^5.1.8",
+    "react-player": "^2.13.0"
   },
   "devDependencies": {
     "eslint": "8.5.0",

@@ -1,5 +1,5 @@
 import "../styles/main.scss";
-import 'react-medium-image-zoom/dist/styles.css';
+import "react-medium-image-zoom/dist/styles.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faGithub,
@@ -19,7 +19,7 @@ import {
   faCheckSquare,
   faCoffee,
   faExternalLinkAlt,
-  faBars
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { faPlayCircle } from "@fortawesome/free-regular-svg-icons";
 
