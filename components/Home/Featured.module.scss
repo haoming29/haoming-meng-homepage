@@ -52,7 +52,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 32px;
+  // height: 32px;
   margin-top: 58px;
 }
 
@@ -79,6 +79,9 @@
 }
 
 @include tablet() {
+  .featuredContainer {
+    margin-bottom: 20px;
+  }
   .texts {
     margin-right: 0;
   }
@@ -88,6 +91,9 @@
 }
 
 @include mobile() {
+  .featuredContainer {
+    margin-bottom: 20px;
+  }
   .texts {
     margin-top: 60px;
     margin-right: 0;
