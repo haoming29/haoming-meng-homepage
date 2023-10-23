@@ -1,11 +1,16 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { AnimatePresence } from "framer-motion";
+
 import Footer from "../Footer";
 import NavBar from "../NavBar";
-import styles from "./MajorLayout.module.scss";
+import MotionPage from "./MotionPage";
 
 const MajorLayout = ({ title, description, children }) => {
+  const router = useRouter();
+
   return (
-    <div>
+    <>
       <Head>
         <title>{title ?? "Haoming Meng Homepage"}</title>
         <meta
@@ -18,10 +23,13 @@ const MajorLayout = ({ title, description, children }) => {
       <header>
         <NavBar dark={true} />
       </header>
-
-      <main>{children}</main>
+      <AnimatePresence>
+        <MotionPage key={router.route}>
+          <main>{children}</main>
+        </MotionPage>
+      </AnimatePresence>
       <Footer />
-    </div>
+    </>
   );
 };
 

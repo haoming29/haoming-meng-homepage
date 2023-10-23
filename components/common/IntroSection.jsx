@@ -23,9 +23,9 @@ const IntroSection = ({
           [styles.introSectionTextsDark]: dark,
         })}
       >
-        <text className={`page-subheading ${dark && "page-dark"}`}>
+        <div className={`page-subheading ${dark && "page-dark"}`}>
           {subheading}
-        </text>
+        </div>
         <div className={`page-heading ${dark && "page-dark"}`}>{heading}</div>
         <div className={`page-description ${dark && "page-dark"}`}>
           {children}
