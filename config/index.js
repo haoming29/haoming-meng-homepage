@@ -29,7 +29,7 @@ export const socialMedia = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/Techming",
+    link: "https://github.com/haoming29",
   },
   {
     name: "YouTube",

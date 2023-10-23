@@ -40,7 +40,7 @@ const about = () => {
           icon={["fab", "github"]}
         />
       ),
-      link: "https://github.com/Techming",
+      link: "https://github.com/haoming29",
     },
   ];
   return (
@@ -55,9 +55,9 @@ const about = () => {
             <div className="page-heading">{`I’m Haoming Meng`}</div>
             <div className="page-description">{aboutIntro}</div>
             <div className={styles.buttonContainer}>
-              <Button 
-               external
-               href="https://www.linkedin.com/in/haomingmeng/">Resume</Button>
+              <Button external href="https://www.linkedin.com/in/haomingmeng/">
+                Resume
+              </Button>
             </div>
           </div>
           <div className={styles.introSectionHeadingImageContainer}>
@@ -79,7 +79,7 @@ const about = () => {
                   <Image
                     src={item.companyLogo}
                     alt={item.companyLogoAlt}
-                    objectFit='cover'
+                    objectFit="cover"
                   />
                 </div>
                 <div className={styles.experienceName}>{item.name}</div>
