@@ -15,6 +15,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 1.777;
+  overflow: hidden;
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.6));
 }
 
@@ -26,7 +27,7 @@
   height: 100%;
   width: 100%;
   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.45);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   transition: ease-in 400ms background;
 }
 
@@ -63,6 +64,7 @@
   margin-top: 6px;
   font-size: 30px;
   line-height: 35px;
+  text-align: center;
 }
 
 .topIcon {
@@ -84,7 +86,7 @@
 }
 
 .image {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .descriptions {
