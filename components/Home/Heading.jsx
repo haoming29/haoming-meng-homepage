@@ -7,7 +7,7 @@ const Heading = () => {
       <div className={`container ${styles.headingContainer}`}>
         <div className={styles.headingName}>Haoming Meng</div>
         <div className={styles.headingPosition}>
-          Software Developer, Film Maker, Stage Hand 
+          Software Engineer, Film Maker, Live Audio Engineer
         </div>
         <div
           className={`${styles.headingMainHeadline} ${styles.headingMainHeadlineHey}`}
@@ -15,8 +15,8 @@ const Heading = () => {
           Hey there!{" "}
         </div>
         <div className={styles.headingMainHeadline}>
-          I am a Computer Science & Film major student at University of
-          Wisconsin Madison.
+          I am a Research Software Engineer at the Morgridge Institute for
+          Research.
         </div>
       </div>
     </section>

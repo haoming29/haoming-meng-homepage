@@ -1,7 +1,8 @@
 import EFlogo from "../public/images/EF_Education_First_logo.jpeg";
-import YBlogo from "../public/images/yiban-logo.jpeg";
+import LabLogo from "../public/images/people-and-robot-lab-logo.jpeg";
 import AI4AfricaLogo from "../public/images/AI-ARTWORK-CUTOUT-NEW.png";
 import BevyLogo from "../public/images/bevy-logo.png";
+import MorgridgeLogo from "../public/images/morgridge-logo.png";
 
 import collegelistLogo from "../public/images/logo-for-favicon.png";
 import collegelistThumbnail from "../public/images/collegelist-thumbnail.png";
@@ -35,19 +36,36 @@ import sayingSeats from "../public/images/saying-seats.png";
 import sayingCrossCheck from "../public/images/saying-crosscheck.png";
 import sayingForm from "../public/images/saying-form.png";
 
-export const aboutIntro = `I’m a senior at University of Wisconsin - Madison,
-studying Computer Science and Communication Arts (film track) and a software developer with emphasize on frontend. I'm expected to
-graduate in summer 2023. I'm actively seeking for full-time positions.`;
+export const aboutIntro = `I’m a Research Software Engineer at the Morgridge Institute for Research. I graduated from University of Wisconsin - Madison in May 2023,
+with a degree in Computer Science and Communication Arts (film track). I'm interested in full-stack development, product design, and 3D reconstruction. Let's connect!`;
 
 export const experience = [
   {
-    name: "Bevy Inc.",
+    name: "Morgridge Institute for Research",
+    title: "Research Software Engineer",
+    companyLogo: MorgridgeLogo,
+    companyLogoAlt: "Morgridge Institute for Research logo",
+    date: "Oct. 2023 - Now",
+    location: "Madison, WI",
+    description: `Work at research computing team to build the Pelican Platform which makes deploying data easy and accessing this data easier via well documented APIs and client tools.`,
+  },
+  {
+    name: "People and Robot Lab",
+    title: "Undergraduate Research Assistant",
+    companyLogo: LabLogo,
+    companyLogoAlt: "People and Robot Lab logo",
+    date: "May 2022 - Now",
+    location: "Madison, WI",
+    description: `Composed a web app that empowers remote collaboration of physical tasks, including real-time robot poses rendering in 3D, a live camera feed, collaborative drawing, video conferencing with Dolby.io, and RBAC with Azure Active Directory.`,
+  },
+  {
+    name: "Bevy",
     title: "Software Developer Intern",
     companyLogo: BevyLogo,
     companyLogoAlt: "Bevy logo",
     date: "Jun. 2022 - Aug. 2022",
     location: "Remote",
-    description: `Migrate instant chat feature from custom fork to Stream equivalence and refactored the virtualized message list\nRebuilt an accessible and intuitive “End event” flow for the virtual event, reducing 60% of related support tickets\nDesigned, built, and tested a new recording flow for virtual events with comprehensive UI/UX experience\nFixed and tested 5 defects in the platform and the internal UI library with Jest, React Testing Library, and Mocha`,
+    description: `Collaborated with an agile team using Django and React to build and maintain virtual event platform, updated live chat API, rebuilt “End Event” user flow, integrated Vonage event composition API for immersive event recording.`,
   },
   {
     name: "AI4Africa",
@@ -56,31 +74,23 @@ export const experience = [
     companyLogoAlt: "AI4Africa logo",
     date: "Jan. 2022 - Aug. 2022",
     location: "Madison, WI",
-    description: `Manage the software development team using Git and GitHub issues\nRestructure and refactor the 20 screens React Native Project and extract Firebase function calls from views\nComponentize view, and build customized UI library from scratch, reducing 100% of redundancy and improve style consistency\nIntegrate Stream instant messaging service, providing rich media messaging and group chat to the users`,
+    description: `Lead the development of multiple React Native apps including a social app with ML-powered features including minority language translations and a health chatbot, a ML utility app to collect text reading recordings for the NLP training dataset.`,
   },
   {
-    name: "EF Education First",
+    name: "EF, Education First",
     title: "Frontend intern",
     companyLogo: EFlogo,
     companyLogoAlt: "Education First logo",
     date: "Jun. 2021 - Aug. 2021",
     location: "Shanghai, China",
-    description: `Refactored the company’s virtual classroom operation website using Typescript, React, and Node.js\nImplemented Azure Active Directory to the project, providing SSO ability via OAuth protocol\nBuilt Docker image and deploy project on Kubernetes with Helm chart and automated Jenkins workflow\nPracticed uniformed coding style with code review and by development tools such as ESlint, husky, prettier`,
-  },
-  {
-    name: "Shanghai Yiban Enterprise Developement Co., Ltd.",
-    title: "Frontend intern",
-    companyLogo: YBlogo,
-    companyLogoAlt: "Education First logo",
-    date: "Mar. 2021 - Jun. 2021",
-    location: "Shanghai, China",
-    description: `Involved the front-end development for national-wide educational management service with 100,000 DAU\nCollected, reported, and fixed bugs of the company's Vue.js web apps\nTested the UI components of company’s UI framework using Jest and Vue Test Utils`,
+    description: `Updated the tech stack for the virtual classroom support website using React, and Node.js in TypeScript, and introduced search and filtering capabilities for classrooms and attendees.`,
   },
 ];
 
 export const skills = [
   "Python",
   "Java",
+  "Golang",
   "Javascript",
   "Typescript",
   "C",
@@ -108,16 +118,16 @@ export const skills = [
 ];
 
 export const funFacts = [
-  "I’m 6’ 3’’ tall.",
+  "I’m 6’ 3’’.",
   "I was a director of a theater play during the lockdown in pandemic.",
-  "I don’t play basketball. lol",
+  "I don’t play basketball.",
 ];
 
 export const codingIntro = `Coding and programming has become part of my daily life, and through
 building multiple programming project, I am deeply convinced that
 lines of code can actually make changes to daily life of human beings.
 Therefore, I want to share projects I’ve done with you and hope that
-they are inspiring.`;
+they are inspiring. For more projects, please refer to my LinkedIn page.`;
 
 export const codingProjects = [
   {
