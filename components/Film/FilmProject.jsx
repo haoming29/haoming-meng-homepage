@@ -15,6 +15,7 @@ const FilmProject = ({
   date,
   roles,
   description,
+  specUrl,
 }) => {
   const isYoutubeURL =
     youtubeURL &&
@@ -79,16 +80,18 @@ const FilmProject = ({
             <div className={`${styles.name} ${top && styles.topName}`}>
               {name}
             </div>
-            <FontAwesomeIcon
-              className={`${styles.icon} ${top && styles.topIcon}`}
-              icon={["far", "play-circle"]}
-            />
+            {youtubeURL && (
+              <FontAwesomeIcon
+                className={`${styles.icon} ${top && styles.topIcon}`}
+                icon={["far", "play-circle"]}
+              />
+            )}
             <div className={`${styles.imageContainer}`}>
               <Image
                 className={`${styles.image}`}
                 src={coverSrc}
                 alt={coverAlt}
-              ></Image>
+              />
             </div>
           </div>
         )}
@@ -103,6 +106,20 @@ const FilmProject = ({
               </span>
             ))}
           </div>
+          {specUrl && (
+            <a
+              className={styles.techSpec}
+              href={specUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <FontAwesomeIcon
+                className={styles.extIcon}
+                icon={["fas", "external-link-alt"]}
+              />
+              Tech Spec
+            </a>
+          )}
         </div>
         <div
           className={`${styles.description} ${top && styles.topDescription}`}

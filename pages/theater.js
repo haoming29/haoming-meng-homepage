@@ -61,6 +61,7 @@ const Theater = () => {
               roles={item.roles}
               description={item.description}
               youtubeURL={item.youtubeURL}
+              specUrl={item.specUrl}
             />
           ))}
         </div>

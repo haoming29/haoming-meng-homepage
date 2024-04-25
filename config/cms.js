@@ -18,6 +18,8 @@ import revival from "../public/images/revival.PNG";
 import anEndlessPoetry from "../public/images/an-endless-poetry.png";
 import samaraJoy from "../public/images/samara-joy.jpeg";
 import cssa2023 from "../public/images/cssa-2023-spring-fesival.png";
+import mereba from "../public/images/mereba.jpeg";
+import humo from "../public/images/humo2024.png";
 
 import collegelistdetail1 from "../public/images/featured-image-1.png";
 import collegelistdetail2 from "../public/images/featured-image-2.png";
@@ -294,14 +296,15 @@ export const codingProjects = [
 export const filmIntro = `As my second major, watching films and producing short film/video contribute to one important part of my life. By producing, script writing, directing, filming, and editing, I involved in a variety of video/short film project and practiced comprehensive skills and aesthetic tastes.`;
 
 export const featuredFilm = {
-  name: "Chinese Barber - Coming Soon",
+  name: "Chinese Barber",
   type: "Documentary Short",
   coverSrc: chineseBarber,
   coverAlt: "Chinese Barber",
   date: "May 2022",
   roles: ["Director", "Producer", "Cinematographer", "Postproduction"],
   description:
-    "Chinese Barber is a 15-minute (tentative) documentary short that observes the daily operations of Fashion Salon, a barbershop located in downtown Madison, Wisconsin run by a Chinese Barber Mrs. Chen Xuan that provides various Asian style haircuts to the local students and residents. Following Mrs. Chen’s life as a barber and a wife from a completely different country, this documentary will try to unveil how Chinese immigrants try to fit themselves into a foreign country and how they contribute to the diversity of the local community.",
+    "Chinese Barber is a 15-minute documentary short that observes the daily operations of Fashion Salon, a barbershop located in downtown Madison, Wisconsin run by a Chinese Barber Mrs. Chen Xuan that provides various Asian style haircuts to the local students and residents. Following Mrs. Chen’s life as a barber and a wife from a completely different country, this documentary will try to unveil how Chinese immigrants try to fit themselves into a foreign country and how they contribute to the diversity of the local community.",
+  youtubeURL: "https://www.youtube.com/watch?v=KgyUjnzI-X0",
 };
 
 export const filmProjects = [
@@ -362,6 +365,28 @@ export const featuredTheaterWork = {
 
 export const theaterProjects = [
   {
+    name: "Humorology 2024",
+    type: "Musical/Variety",
+    coverSrc: humo,
+    coverAlt: "Mereba cover image",
+    date: "Apr 2024",
+    roles: ["Audio Engineer (A2)"],
+    description:
+      'Humorology, or "Humo" for short, is an annual musical/variety show that takes place at the University of Wisconsin-Madison in April of each year.  Humorology has been a UW- Madison tradition since 1947, touching the lives of students and the community through the friendships they make and the money they raise for local non-profits. This year, Humorology is presenting "It\'s a Small World" in April.',
+    specUrl:
+      "https://haomingm.notion.site/Humorology-2024-eb48a11c6844416b9a0f9d130887aed8",
+  },
+  {
+    name: "Mereba - Madison Tour",
+    type: "Live Concert",
+    coverSrc: mereba,
+    coverAlt: "Mereba cover image",
+    date: "Dec 2023",
+    roles: ["OB Audio Engineer"],
+    description:
+      "UW-Madison's 175th Concert Series presents Mereba with openers Speedy Calhoun and UW–Madison student artists. Mereba is a multifaceted artist with the life story of a rolling stone. Her unique blend of r&b, folk, and hip hop makes space for a new voice found in this wise young storyteller.",
+  },
+  {
     name: "Samara Joy - Madison Concert",
     type: "Live Concert",
     coverSrc: samaraJoy,
@@ -377,7 +402,7 @@ export const theaterProjects = [
     coverSrc: revival,
     coverAlt: "Revival Band Spring 2023 Showcase cover image",
     date: "April 2023",
-    roles: ["Audio Engineer"],
+    roles: ["Audio Engineer (A1)"],
     description:
       "Revival Band is a Chinese band at Madison, WI who brings Chinese pop music to the campus community. They brought over 15 songs for their spring 2023 showcase.",
   },
@@ -387,7 +412,7 @@ export const theaterProjects = [
     coverSrc: cssa2023,
     coverAlt: "CSSA 2023 Spring Festival Gala cover image",
     date: "Jan 2023",
-    roles: ["Audio Engineer", "Lead Stagehand"],
+    roles: ["Audio Engineer (A1)", "Lead Stagehand"],
     description:
       "Spring Festival Gala is a yearly show brought by UW-Madison Chinese Student and Scholars Association (CSSA) during Chinese Spring Festival, featuring live band, dancing, singing, talk show, and Chinese traditional shows. This year the gala has 8 wireless channels, 2 live bands, 40 audio inputs and more than 10 outputs.  Note that this video is in Chinese.",
     youtubeURL: "https://www.youtube.com/live/59SVrnXAkpY?si=NMY3GVMru046ArRR",
@@ -398,7 +423,7 @@ export const theaterProjects = [
     coverSrc: anEndlessPoetry,
     coverAlt: "An Endless Poetry cover image",
     date: "Nov 2022",
-    roles: ["Audio Engineer"],
+    roles: ["Audio Engineer (A1)"],
     description:
       "An Endless Poetry is an original Chinese musical by Foundland Musical. Note that this video is in Chinese.",
     youtubeURL: "https://www.bilibili.com/video/BV1eW4y157V4",
@@ -427,7 +452,7 @@ export const theaterProjects = [
     name: "CSSA 2020 Spring Festival Gala",
     type: "Gala",
     date: "Jan 2020",
-    roles: ["Audio Engineer"],
+    roles: ["Audio Engineer (A1)"],
     description:
       "Spring Festival Gala is a yearly show brought by UW-Madison Chinese Student and Scholars Association (CSSA) during Chinese Spring Festival, featuring live band, dancing, singing, talk show, and Chinese traditional shows.",
     youtubeURL: "https://www.youtube.com/watch?v=GX2KXY3AqNk",

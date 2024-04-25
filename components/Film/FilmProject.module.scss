@@ -85,6 +85,11 @@
   z-index: -1;
 }
 
+.imageContainer span {
+  height: 100% !important;
+  width: 100% !important;
+}
+
 .image {
   object-fit: cover;
 }
@@ -113,6 +118,15 @@
 
 .role {
   margin-right: 10px;
+}
+
+.techSpec {
+  margin-left: 10px;
+}
+
+.extIcon {
+  height: 10px;
+  margin-right: 4px;
 }
 
 .description {

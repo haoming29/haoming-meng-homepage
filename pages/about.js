@@ -23,16 +23,6 @@ const about = () => {
       link: "https://www.linkedin.com/in/haomingmeng/",
     },
     {
-      name: "YouTube",
-      icon: (
-        <FontAwesomeIcon
-          className={styles.socialmediaIcon}
-          icon={["fab", "youtube"]}
-        />
-      ),
-      link: "https://www.youtube.com/channel/UC1jz7jNrbqshQPBxX8_ZC_Q",
-    },
-    {
       name: "GitHub",
       icon: (
         <FontAwesomeIcon
@@ -41,6 +31,16 @@ const about = () => {
         />
       ),
       link: "https://github.com/haoming29",
+    },
+    {
+      name: "YouTube",
+      icon: (
+        <FontAwesomeIcon
+          className={styles.socialmediaIcon}
+          icon={["fab", "youtube"]}
+        />
+      ),
+      link: "https://www.youtube.com/channel/UC1jz7jNrbqshQPBxX8_ZC_Q",
     },
   ];
   return (
@@ -115,7 +115,7 @@ const about = () => {
             </div>
           </div>
         </section>
-        <section className={`${styles.section}`}>
+        {/* <section className={`${styles.section}`}>
           <div className={styles.sectionHeader}>Fun Facts</div>
           <div className={styles.funfactsContainer}>
             {funFacts.map((item, index) => (
@@ -125,7 +125,7 @@ const about = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
         <section className={`${styles.section}`}>
           <div className={styles.sectionHeader}>Social Media</div>
           <div className={styles.socialmediaContainer}>
