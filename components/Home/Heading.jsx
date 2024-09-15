@@ -19,15 +19,15 @@ const Heading = () => {
           key={"home-name-tagline"}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.6, delay: 0.8 }}
+          transition={{ ease: "easeInOut", duration: 0.6, delay: 0.5 }}
           className={styles.headingPosition}
         >
-          Software Engineer, Film Maker, Live Audio Engineer
+          Software Engineer, Audio Engineer
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.6, delay: 2.2 }}
+          transition={{ ease: "easeInOut", duration: 0.6, delay: 2.0 }}
           key={"home-hey"}
           className={`${styles.headingMainHeadline} ${styles.headingMainHeadlineHey}`}
         >
@@ -37,11 +37,10 @@ const Heading = () => {
           key={"home-tagline"}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.8, delay: 3.2 }}
+          transition={{ ease: "easeInOut", duration: 0.8, delay: 3.0 }}
           className={styles.headingMainHeadline}
         >
-          I am a Research Software Engineer at the Morgridge Institute for
-          Research.
+          I am a Software Engineer at TikTok.
         </motion.div>
       </div>
     </section>

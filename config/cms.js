@@ -1,8 +1,8 @@
 import EFlogo from "../public/images/EF_Education_First_logo.jpeg";
 import LabLogo from "../public/images/people-and-robot-lab-logo.jpeg";
-import AI4AfricaLogo from "../public/images/AI-ARTWORK-CUTOUT-NEW.png";
 import BevyLogo from "../public/images/bevy-logo.png";
 import MorgridgeLogo from "../public/images/morgridge-logo.png";
+import TiktokLogo from "../public/images/tiktok-logo.png";
 
 import collegelistLogo from "../public/images/logo-for-favicon.png";
 import collegelistThumbnail from "../public/images/collegelist-thumbnail.png";
@@ -44,18 +44,26 @@ import sayingSeats from "../public/images/saying-seats.png";
 import sayingCrossCheck from "../public/images/saying-crosscheck.png";
 import sayingForm from "../public/images/saying-form.png";
 
-export const aboutIntro = `I’m a Research Software Engineer at the Morgridge Institute for Research. I graduated from University of Wisconsin - Madison in May 2023,
-with a degree in Computer Science and Communication Arts (film track). I'm interested in full-stack development, product design, and 3D reconstruction. Let's connect!`;
+export const aboutIntro = `I am a Software Engineer at TikTok. I'm interested in software engineering, audio engineering, theater tech, and more. Let's connect!`;
 
 export const experience = [
+  {
+    name: "TikTok",
+    title: "Full-stack Software Engineer",
+    companyLogo: TiktokLogo,
+    companyLogoAlt: "TikTok Logo",
+    date: "Aug. 2024 - Now",
+    location: "Bellevue, WA",
+    description: `Build agent-facing tools to facilitate customer support across multiple business lines around the globe.`,
+  },
   {
     name: "Morgridge Institute for Research",
     title: "Research Software Engineer",
     companyLogo: MorgridgeLogo,
     companyLogoAlt: "Morgridge Institute for Research logo",
-    date: "Oct. 2023 - Now",
+    date: "Oct. 2023 - Aug. 2024",
     location: "Madison, WI",
-    description: `Work at research computing team to build the Pelican Platform which makes deploying data easy and accessing this data easier via well documented APIs and client tools.`,
+    description: `Core developer of the Pelican Platform, a software suite for building data federations and distributing diverse datasets through high-throughput delivery networks. It is used by the Open Science Data Federation (OSDF) to support research from CERN, LIGO, NARO, the Fermilab, and many more.`,
   },
   {
     name: "People and Robot Lab",
@@ -75,30 +83,12 @@ export const experience = [
     location: "Remote",
     description: `Collaborated with an agile team using Django and React to build and maintain virtual event platform, updated live chat API, rebuilt “End Event” user flow, integrated Vonage event composition API for immersive event recording.`,
   },
-  {
-    name: "AI4Africa",
-    title: "Software Development Lead",
-    companyLogo: AI4AfricaLogo,
-    companyLogoAlt: "AI4Africa logo",
-    date: "Jan. 2022 - Aug. 2022",
-    location: "Madison, WI",
-    description: `Lead the development of multiple React Native apps including a social app with ML-powered features including minority language translations and a health chatbot, a ML utility app to collect text reading recordings for the NLP training dataset.`,
-  },
-  {
-    name: "EF, Education First",
-    title: "Frontend intern",
-    companyLogo: EFlogo,
-    companyLogoAlt: "Education First logo",
-    date: "Jun. 2021 - Aug. 2021",
-    location: "Shanghai, China",
-    description: `Updated the tech stack for the virtual classroom support website using React, and Node.js in TypeScript, and introduced search and filtering capabilities for classrooms and attendees.`,
-  },
 ];
 
 export const skills = [
+  "Golang",
   "Python",
   "Java",
-  "Golang",
   "Javascript",
   "Typescript",
   "C",
@@ -123,12 +113,6 @@ export const skills = [
   "ELK",
   "CI/CD",
   "Scrum",
-];
-
-export const funFacts = [
-  "I’m 6’ 3’’.",
-  "I was a director of a theater play during the lockdown in pandemic.",
-  "I don’t play basketball.",
 ];
 
 export const codingIntro = `Coding and programming has become part of my daily life, and through
@@ -194,103 +178,6 @@ export const codingProjects = [
       alt: "College List System Architecture",
     },
   },
-  {
-    name: "Activity Go",
-    id: "activity-go",
-    link: "https://activitygo.mingx.tech/",
-    type: "Web App",
-    date: "Sep.2021 – Dec. 2021",
-    role: "Project Manager, Full-stack Developer",
-    logoSrc: activityGoLogo,
-    thumbnailSrc: activityGoThumbnail,
-    thumbnailAlt: "Activity Go",
-    description:
-      "Activity Go helps users achieve their fitness goals by recommending activities based on their personal interests and health conditions and awarding them gift cards for completing activities.",
-    techStack: [
-      "react",
-      "figma",
-      "mysql",
-      "flask",
-      "aws",
-      "scrum",
-      "docker",
-      "github actions",
-    ],
-    hasDetailImage: true,
-    detailImages: [activityDetail2, activityDetail1],
-    features: [
-      {
-        name: "OAuth",
-        intro:
-          "Connect user to our service via Epic’s MyChart, where patient can easily authenticate and share their health information with us using a single click.",
-        image: activityOauth,
-      },
-      {
-        name: "Activities",
-        intro:
-          "Local activities are imported to our database and will recommend to user by their geographic location. In the later phase, recommendation will based on user’s favors and their health conditions via machine learning.",
-        image: activityActivity,
-      },
-      {
-        name: "Records",
-        intro:
-          "User can save the recommended activities for later reference. They may also start/finish the activities to update the status of their saved activities.",
-        image: activityRecord,
-      },
-      {
-        name: "Rewards",
-        intro:
-          "When finished each activities, rewards points are granted to the user, which can be redeemed for git cards as incentive to help user keep track of their goals.",
-        image: activityRewards,
-      },
-    ],
-    systemArchitecture: {
-      image: activityDesign,
-      // description: `Built front-end with React.js, using Ant Design UI library, and Axios. \nProvided Restful API through Flask, with Pandas and NumPy to generate customized college list. \nDeployed project with Docker and GitHub Actions to achieve continuous development and integration.`,
-      alt: "Activity Go System Architecture",
-    },
-  },
-  {
-    name: "Theatre Booking Website",
-    id: "theatre-booking-website",
-    link: "https://mingx.tech/",
-    type: "Web App",
-    date: "Sep.2019 – Mar. 2020",
-    role: "Personal Project",
-    logoSrc: sayingLogo,
-    thumbnailSrc: sayingThumbnail,
-    thumbnailAlt: "Theatre Booking Website",
-    description:
-      "A ticket booking website for a theatre club with over 500 patrons per show.",
-    techStack: ["node", "express", "bootstrap", "mongodb", "linux", "nginx"],
-    hasDetailImage: true,
-    detailImages: [sayingDetail1, sayingDetial2],
-    features: [
-      {
-        name: "Seats",
-        intro:
-          "With jQuery Seat Charts, patrons can select seats by interacting with a seat map. Multiple rules are added to avoid unexpected user behavior such as maximum seats, ect.",
-        image: sayingSeats,
-      },
-      {
-        name: "form",
-        intro:
-          "After the selection, patron is asked to fill out their personal information",
-        image: sayingForm,
-      },
-      {
-        name: "CrossCheck",
-        intro:
-          "When user select the seat, the seat will be locked so that other user have no access to it, and the seat will be freed and releases after 10minutes if the patron doesn’t proceed to the confirmation.",
-        image: sayingCrossCheck,
-      },
-    ],
-    systemArchitecture: {
-      image: "",
-      description: ``,
-      alt: "",
-    },
-  },
 ];
 
 export const filmIntro = `As my second major, watching films and producing short film/video contribute to one important part of my life. By producing, script writing, directing, filming, and editing, I involved in a variety of video/short film project and practiced comprehensive skills and aesthetic tastes.`;
@@ -318,34 +205,6 @@ export const filmProjects = [
     description:
       "Rhinoceros in Love is a famous Chinese modern love tragedy directed by Jinghui Meng. It features stream-of-consciousness lines and scenic design, with the pioneering idea of expressing the spark and gloom of a young pair. To reproduce such a great theatrical work under the physical constraints, we rehearsed and recorded the play via Zoom where actors and staff were isolated around the world. By deliberate conceive of screen layout and editing tricks, we tried our best to connect the interactions between characters on the screen.",
     youtubeURL: "https://www.youtube.com/watch?v=JSwKosGOIFc",
-  },
-  {
-    name: "She Was Smiling #MentalHealth PSA",
-    type: "Short Film",
-    coverSrc: "",
-    coverAlt: "",
-    date: "Oct 2020",
-    roles: [
-      "Director",
-      "Script",
-      "Producer",
-      "Cinematographer",
-      "Postproduction",
-    ],
-    description:
-      "“Smiling depression” is a subset of depression disorder that the patients cover their depression by superficial happiness and it’s oblivious to others that he or she may suffer from huge emotional fluctuation. In this short PSA, I present such a protagonist with smiling depression who experiences a flood of emotion when she is alone. Filmed by iPhone Xr with ProTake.",
-    youtubeURL: "https://www.youtube.com/watch?v=wIkZf37JIXM",
-  },
-  {
-    name: "Memory Blocked",
-    type: "Short Film",
-    coverSrc: "",
-    coverAlt: "",
-    date: "June 2019",
-    roles: ["Director", "Producer", "Cinematographer", "Postproduction"],
-    description:
-      "When memory becomes illusion, and illusion becomes reality, will you feel cured, or will you be frightened. Shot by Sony FX5.",
-    youtubeURL: "https://youtu.be/m_8cNjdE30o",
   },
 ];
 

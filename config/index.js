@@ -35,9 +35,4 @@ export const socialMedia = [
     icon: "github",
     link: "https://github.com/haoming29",
   },
-  {
-    name: "YouTube",
-    icon: "youtube",
-    link: "https://www.youtube.com/channel/UC1jz7jNrbqshQPBxX8_ZC_Q",
-  },
 ];

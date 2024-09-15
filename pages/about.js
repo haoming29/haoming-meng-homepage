@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MajorLayout from "../components/layouts/MajorLayout";
 import styles from "./about.module.scss";
 import sectionImage from "../public/images/business-3d-318.png";
@@ -11,38 +10,6 @@ import { title } from "../utils";
 import { aboutIntro, experience, funFacts, skills } from "../config/cms";
 
 const about = () => {
-  const socialMedias = [
-    {
-      name: "LinkedIn",
-      icon: (
-        <FontAwesomeIcon
-          className={styles.socialmediaIcon}
-          icon={["fab", "linkedin"]}
-        />
-      ),
-      link: "https://www.linkedin.com/in/haomingmeng/",
-    },
-    {
-      name: "GitHub",
-      icon: (
-        <FontAwesomeIcon
-          className={styles.socialmediaIcon}
-          icon={["fab", "github"]}
-        />
-      ),
-      link: "https://github.com/haoming29",
-    },
-    {
-      name: "YouTube",
-      icon: (
-        <FontAwesomeIcon
-          className={styles.socialmediaIcon}
-          icon={["fab", "youtube"]}
-        />
-      ),
-      link: "https://www.youtube.com/channel/UC1jz7jNrbqshQPBxX8_ZC_Q",
-    },
-  ];
   return (
     <MajorLayout>
       <Head>
@@ -113,34 +80,6 @@ const about = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-        {/* <section className={`${styles.section}`}>
-          <div className={styles.sectionHeader}>Fun Facts</div>
-          <div className={styles.funfactsContainer}>
-            {funFacts.map((item, index) => (
-              <div key={index} className={styles.funfact}>
-                <div className={styles.funfactName}>{`#${index}`}</div>
-                <div className={styles.funfactContent}>{item}</div>
-              </div>
-            ))}
-          </div>
-        </section> */}
-        <section className={`${styles.section}`}>
-          <div className={styles.sectionHeader}>Social Media</div>
-          <div className={styles.socialmediaContainer}>
-            {socialMedias.map((item) => (
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noreferrer"
-                key={item.name}
-                className={`${styles.socialmedia} link`}
-              >
-                {item.icon}
-                <div className={styles.socialmediaName}>{item.name}</div>
-              </a>
-            ))}
           </div>
         </section>
       </div>

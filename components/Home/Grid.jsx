@@ -8,24 +8,24 @@ import rhinoceros from "../../public/images/RhinocerosInLove.png";
 
 const Grid = () => {
   const boxes = [
-    {
-      src: activityGo,
-      link: "/coding/activity-go",
-      name: "Activity Go",
-      type: "Web App",
-    },
-    {
-      src: saying,
-      link: "/coding/theatre-booking-website",
-      name: "Saying Theatre Booking Online",
-      type: "Web App",
-    },
-    {
-      src: rhinoceros,
-      link: "/film",
-      name: "Rhinoceros in Love",
-      type: "Online Theatre",
-    },
+    // {
+    //   src: activityGo,
+    //   link: "/coding/activity-go",
+    //   name: "Activity Go",
+    //   type: "Web App",
+    // },
+    // {
+    //   src: saying,
+    //   link: "/coding/theatre-booking-website",
+    //   name: "Saying Theatre Booking Online",
+    //   type: "Web App",
+    // },
+    // {
+    //   src: rhinoceros,
+    //   link: "/film",
+    //   name: "Rhinoceros in Love",
+    //   type: "Online Theatre",
+    // },
   ];
   return (
     <div className={`${styles.grid}`}>
